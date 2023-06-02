@@ -497,11 +497,21 @@ def order_collecting(x):
     uid = x["uid"]
     order_id = request.get_json().get("order_id")
     Order = orders.query.filter(orders.id == order_id).first()
-    a = collections(order_id=order_id, order_title=Order.title,
-                    order_picture=Order.picture, user_id=uid)
-    db.session.add(a)
-    db.session.commit()
-    return jsonify(code=200, message="success")
+    order_filter = {
+        and_(
+            collections.order_id == order_id,
+            collections.user_id == uid
+        )
+    }
+    collection = collections.query.filter(*order_filter).first()
+    if collection is not None:
+        return jsonify(code=401, message="您已收藏过此商品了")
+    else:
+        a = collections(order_id=order_id, order_title=Order.title,
+                        order_picture=Order.picture, user_id=uid)
+        db.session.add(a)
+        db.session.commit()
+        return jsonify(code=200, message="success")
 
 
 @view.route('/order/view/collection', methods=['GET', 'OPTIONS'])
