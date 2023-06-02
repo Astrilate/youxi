@@ -523,33 +523,21 @@ def order_view_collection(x):
 
 @view.route('/order/view/mine', methods=['GET', 'OPTIONS'])
 @token().check_token("1")
-# 地址传参/order/view/mine?   &page=xxx
+# 地址传参/order/view/mine?type=buying/selling&page=xxx
 def order_view_mine(x):
     uid = x["uid"]
     all_data = []
-    done = request.args.get("done")
+    Type = request.args.get("type")
     page = int(request.args.get("page"))
     offset = (page - 1) * 5
-    if done == "True":
-        order_filter = {
-            and_(orders.buyer_id == uid,
-                 orders.status == "已结束")
-        }
+    if Type == "selling":
+        search = orders.query.filter(orders.seller_id == uid).offset(offset).limit(5).all()
     else:
-        order_filter = {
-            and_(
-                orders.buyer_id == uid
-            ),
-            or_(
-                orders.status == "待验货",
-                orders.status == "待重审",
-                orders.status == "待发货"
-            )
-        }
-    search = orders.query.filter(*order_filter).offset(offset).limit(5).all()
+        search = orders.query.filter(orders.buyer_id == uid).offset(offset).limit(5).all()
     for each in search:
         each_data = {}
         each_data.update(order_id=each.id, title=each.title,
+                         status=each.status, price=each.price,
                          picture=jpg(each.picture))
         all_data.append(each_data)
     return jsonify(code=200, message="success", data=all_data)
