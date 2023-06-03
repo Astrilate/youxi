@@ -244,8 +244,8 @@ def report_view_verifying(x):
     if access == "admin":
         all_data = []
         page = int(request.args.get("page"))
-        offset = (page - 1) * 5
-        search = reports.query.filter(reports.status == "待审核").offset(offset).limit(5).all()
+        offset = (page - 1) * 10
+        search = reports.query.filter(reports.status == "待审核").offset(offset).limit(10).all()
         for each in search:
             each_data = {}
             each_data.update(report_id=each.id, user_id=each.user_id,

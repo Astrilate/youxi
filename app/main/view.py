@@ -127,8 +127,8 @@ def order_updating(x):
 def order_view():
     all_data = []
     page = int(request.args.get("page"))
-    offset = (page - 1) * 5
-    search = orders.query.filter(orders.status == "已通过").offset(offset).limit(5).all()
+    offset = (page - 1) * 10
+    search = orders.query.filter(orders.status == "已通过").offset(offset).limit(10).all()
     for each in search:
         each_data = {}
         each_data.update(order_id=each.id, title=each.title,
@@ -145,13 +145,13 @@ def order_view_verifying(x):
     if access == "admin":
         all_data = []
         page = int(request.args.get("page"))
-        offset = (page - 1) * 5
+        offset = (page - 1) * 10
         order_filter = {
             or_(
                 orders.status == "待审核",
                 orders.status == "待重审"
             )}
-        search = orders.query.filter(*order_filter).offset(offset).limit(5).all()
+        search = orders.query.filter(*order_filter).offset(offset).limit(10).all()
         for each in search:
             each_data = {}
             each_data.update(order_id=each.id, title=each.title,
@@ -207,7 +207,7 @@ def order_searching():
     all_data = []
     keyword = request.args.get("keyword")
     page = int(request.args.get("page"))
-    offset = (page - 1) * 5
+    offset = (page - 1) * 10
     order_filter = {
         or_(
             orders.title.like(f'%{keyword}%'),
@@ -218,7 +218,7 @@ def order_searching():
             orders.status == "已通过"
         )
     }
-    search = orders.query.filter(*order_filter).offset(offset).limit(5).all()
+    search = orders.query.filter(*order_filter).offset(offset).limit(10).all()
     for each in search:
         each_data = {}
         each_data.update(order_id=each.id, title=each.title,
@@ -289,8 +289,8 @@ def bid_searching(x):
     all_data = []
     order_id = int(request.args.get("order_id"))
     page = int(request.args.get("page"))
-    offset = (page - 1) * 5
-    search = bids.query.filter(bids.order_id == order_id).offset(offset).limit(5).all()
+    offset = (page - 1) * 10
+    search = bids.query.filter(bids.order_id == order_id).offset(offset).limit(10).all()
     for each in search:
         each_data = {}
         each_data.update(bid_id=each.id, buyer_name=each.buyer_name, price=each.price,
@@ -479,8 +479,8 @@ def message(x):
     uid = x["uid"]
     all_data = []
     page = int(request.args.get("page"))
-    offset = (page - 1) * 5
-    search = messages.query.filter(messages.user_id == uid).offset(offset).limit(5).all()
+    offset = (page - 1) * 10
+    search = messages.query.filter(messages.user_id == uid).offset(offset).limit(10).all()
     for each in search:
         each_data = {}
         each_data.update(message=each.message, time=each.time)
@@ -521,8 +521,8 @@ def order_view_collection(x):
     uid = x["uid"]
     all_data = []
     page = int(request.args.get("page"))
-    offset = (page - 1) * 5
-    search = collections.query.filter(collections.user_id == uid).offset(offset).limit(5).all()
+    offset = (page - 1) * 10
+    search = collections.query.filter(collections.user_id == uid).offset(offset).limit(10).all()
     for each in search:
         each_data = {}
         each_data.update(order_id=each.order_id, title=each.order_title,
@@ -539,11 +539,11 @@ def order_view_mine(x):
     all_data = []
     Type = request.args.get("type")
     page = int(request.args.get("page"))
-    offset = (page - 1) * 5
+    offset = (page - 1) * 10
     if Type == "selling":
-        search = orders.query.filter(orders.seller_id == uid).offset(offset).limit(5).all()
+        search = orders.query.filter(orders.seller_id == uid).offset(offset).limit(10).all()
     else:
-        search = orders.query.filter(orders.buyer_id == uid).offset(offset).limit(5).all()
+        search = orders.query.filter(orders.buyer_id == uid).offset(offset).limit(10).all()
     for each in search:
         each_data = {}
         each_data.update(order_id=each.id, title=each.title,
