@@ -179,7 +179,7 @@ def user_information(x):
     return jsonify(code=200, message="success", data=all_data)
 
 
-@user.route('/money', methods=['PUT', 'OPTIONS'])
+@user.route('/money', methods=['PUT', 'GET', 'OPTIONS'])
 @token().check_token("0")
 # {
 #     "money": xxx,
@@ -187,23 +187,29 @@ def user_information(x):
 # }
 def money(x):
     uid = x["uid"]
-    money = request.get_json().get("money")
-    operation = request.get_json().get("operation")
     User = users.query.filter(users.id == uid)
-    try:
-        float(money)
-    except ValueError:
-        return jsonify(code=400, message="金额应为数字")
-    if money <= 0:
-        return jsonify(code=400, message="金额应为正数")
-    if operation == "in":
-        User.update({"money": User.first().money + money})
+    if request.method == "GET":
+        money = User.first().money
+        idata = {}
+        idata.update(money=money)
+        return jsonify(code=200, message="success", data=idata)
     else:
-        if User.first().money - money < 0:
-            return jsonify(code=400, message="账户余额不足")
-        User.update({"money": User.first().money - money})
-    db.session.commit()
-    return jsonify(code=200, message="success")
+        money = request.get_json().get("money")
+        operation = request.get_json().get("operation")
+        try:
+            float(money)
+        except ValueError:
+            return jsonify(code=400, message="金额应为数字")
+        if money <= 0:
+            return jsonify(code=400, message="金额应为正数")
+        if operation == "in":
+            User.update({"money": User.first().money + money})
+        else:
+            if User.first().money - money < 0:
+                return jsonify(code=400, message="账户余额不足")
+            User.update({"money": User.first().money - money})
+        db.session.commit()
+        return jsonify(code=200, message="success")
 
 
 @user.route('/reporting', methods=['POST', 'OPTIONS'])

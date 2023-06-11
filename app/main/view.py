@@ -354,7 +354,11 @@ def order_confirming(x):
                          message=f"您出售的商品[{Order.first().title}]买家验货不通过，您可选择取消交易或者提交新的资源信息等待审核")
         db.session.add(a)
         db.session.commit()
-        return jsonify(code=200, message="success")
+        idata = {}
+        idata.update(order_id=Order.first().id, title=Order.first().title,
+                     status=Order.first().status, price=Order.first().price,
+                     picture=jpg(Order.first().picture))
+        return jsonify(code=200, message="success", data=idata)
     else:
         return jsonify(code=401, message="用户无权限")
 
@@ -395,8 +399,12 @@ def order_delivering(x):
             User.update({"money": User.first().money + price})
             Order.update({"buyer_id": None, "money": "否", "status": "已通过"})
             db.session.add_all([a, b])
+        idata = {}
+        idata.update(order_id=Order.first().id, title=Order.first().title,
+                     status=Order.first().status, price=Order.first().price,
+                     picture=jpg(Order.first().picture))
         db.session.commit()
-        return jsonify(code=200, message="success")
+        return jsonify(code=200, message="success", data=idata)
     else:
         return jsonify(code=401, message="用户无权限")
 
