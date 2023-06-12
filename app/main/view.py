@@ -4,6 +4,7 @@ import time
 from flask import jsonify, request
 from flask_cors import CORS
 from sqlalchemy import or_, and_
+from alipay import AliPay
 
 from app import db, redis_store
 from app.main import view
@@ -18,6 +19,31 @@ CORS(view, supports_credentials=True)
 def hello():
     return "hello"
 
+
+
+@view.route('/paying', methods=['POST', 'OPTIONS'])
+def paying():
+    private_key = open(os.path.join(os.path.dirname(__file__), "keys/app_private_key.pem")).read()
+    public_key = open(os.path.join(os.path.dirname(__file__), "keys/alipay_public_key.pem")).read()
+    alipay = AliPay(
+        appid="9021000122686870",
+        app_notify_url=None,
+        app_private_key_string=private_key,
+        alipay_public_key_string=public_key,
+        sign_type="RSA2",
+        debug=True,
+    )
+
+    order_string = alipay.api_alipay_trade_page_pay(
+        out_trade_no="999",
+        total_amount="123",
+        subject="测试订单",
+        return_url="http://127.0.0.1:5000",
+        notify_url=None
+    )
+
+    pay_url = "https://openapi-sandbox.dl.alipaydev.com/gateway.do?" + order_string
+    return jsonify(code=200, message="success", data={"pay_url": pay_url})
 
 @view.route('/code', methods=['GET', 'OPTIONS'])
 def code():
