@@ -9,7 +9,8 @@ from flask_cors import CORS
 from sqlalchemy import and_
 from alipay import AliPay
 
-from app import db, redis_store
+from app import db, app
+from app.config import redis_store
 from app.main import user
 from app.main.utils import token, SECRET_KEY, ALGORITHM, e_mail, jpg
 
@@ -48,6 +49,7 @@ def login():
     username = get_json.get("username")
     password = get_json.get('password')
     code = get_json.get("code").lower()
+    app.logger.info(username + " " + password + " " + code)
     print("输入的", code)
     print("redis为", redis_store.get("code"))
     ch = users.query.filter(users.username == username).first()

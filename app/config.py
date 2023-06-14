@@ -1,5 +1,8 @@
 import os
 import logging.config
+
+from redis.client import StrictRedis
+
 from app.main.logging.log_path import LOG_DIR
 
 
@@ -11,6 +14,9 @@ DATABASE = 'youxi'
 DB_URI = 'mysql+pymysql://{}:{}@{}:{}/{}'.format(USERNAME, PASSWORD, HOST, PORT, DATABASE)
 SQLALCHEMY_DATABASE_URI = DB_URI
 SQLALCHEMY_TRACK_MODIFICATION = False
+
+
+redis_store = StrictRedis(host="127.0.0.1", port=6379, decode_responses=True)
 
 
 logging.config.dictConfig(

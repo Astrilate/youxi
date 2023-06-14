@@ -5,7 +5,8 @@ from flask import jsonify, request
 from flask_cors import CORS
 from sqlalchemy import or_, and_
 
-from app import db, redis_store, app
+from app import db, app
+from app.config import redis_store
 from app.main import view
 from app.main.utils import token, jpg
 from app.model import users, orders, bids, messages, collections
