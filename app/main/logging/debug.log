@@ -1,0 +1,313 @@
+2023-06-14 12:09:31,627 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 12:09:31,628 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 12:09:43,067 - app - INFO - this is an info
+2023-06-14 12:09:43,068 - app - ERROR - this is an error
+2023-06-14 12:09:43,069 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 12:09:43] "GET / HTTP/1.1" 200 -
+2023-06-14 12:59:56,259 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 12:59:56,260 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 13:00:09,320 - app - INFO - this is an info
+2023-06-14 13:00:09,320 - app - ERROR - this is an error
+2023-06-14 13:00:09,321 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 13:00:09] "GET / HTTP/1.1" 200 -
+2023-06-14 13:00:24,413 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 13:00:24,414 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 17:43:23,182 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 17:43:23,183 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 17:44:25,540 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:25] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 17:44:25,567 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:25] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:44:25,841 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:25] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 17:44:28,823 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:28] "GET /static/picture/14.jpg HTTP/1.1" 200 -
+2023-06-14 17:44:28,905 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:28] "GET /static/picture/13.jpg HTTP/1.1" 200 -
+2023-06-14 17:44:31,859 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:31] "GET /static/picture/12.jpg HTTP/1.1" 200 -
+2023-06-14 17:44:34,869 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:34] "GET /static/picture/11.jpg HTTP/1.1" 200 -
+2023-06-14 17:44:42,519 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:42] "GET /code HTTP/1.1" 200 -
+2023-06-14 17:44:42,871 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:42] "GET /static/code.jpg HTTP/1.1" 200 -
+2023-06-14 17:44:50,289 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:50] "POST /login HTTP/1.1" 200 -
+2023-06-14 17:44:50,618 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:50] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:44:50,867 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:50] "GET /static/photo/1.jpg HTTP/1.1" 200 -
+2023-06-14 17:44:59,699 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:59] "GET /money HTTP/1.1" 200 -
+2023-06-14 17:45:09,490 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:45:09] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:45:12,179 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:45:12] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:45:12,782 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:45:12] "GET /user/information?id=2 HTTP/1.1" 200 -
+2023-06-14 17:45:13,021 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:45:13] "GET /static/photo/2.jpg HTTP/1.1" 200 -
+2023-06-14 17:45:13,602 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:45:13] "GET /static/photo/2.jpg HTTP/1.1" 200 -
+2023-06-14 17:45:13,607 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:45:13] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:45:16,435 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:45:16] "GET /static/photo/1.jpg HTTP/1.1" 200 -
+2023-06-14 17:45:40,919 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:45:40] "POST /reporting HTTP/1.1" 200 -
+2023-06-14 17:46:45,401 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:46:45] "POST /reporting HTTP/1.1" 200 -
+2023-06-14 17:46:53,343 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:46:53] "POST /reporting HTTP/1.1" 200 -
+2023-06-14 17:47:16,091 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:16] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:47:20,182 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:20] "[33mGET /exception/1000?page=1 HTTP/1.1[0m" 404 -
+2023-06-14 17:47:22,133 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:22] "GET /order/view/verifying?page=1 HTTP/1.1" 200 -
+2023-06-14 17:47:22,355 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:22] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 17:47:22,360 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:22] "GET /static/picture/13.jpg HTTP/1.1" 200 -
+2023-06-14 17:47:29,881 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:29] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 17:47:30,023 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:30] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:47:30,246 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:30] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:47:31,115 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:31] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 17:47:31,214 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:31] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:47:31,519 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:31] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:47:39,929 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:39] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:47:43,834 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:43] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:48:06,641 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:06] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:48:12,434 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:12] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 17:48:12,729 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:12] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 17:48:12,731 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:12] "GET /order/view/mine?type=selling&page=2 HTTP/1.1" 200 -
+2023-06-14 17:48:12,736 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:12] "GET /static/picture/14.jpg HTTP/1.1" 200 -
+2023-06-14 17:48:13,514 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:13] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:48:14,192 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:14] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 17:48:15,387 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:15] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:48:15,915 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:15] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 17:48:16,226 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:16] "GET /order/view/mine?type=selling&page=2 HTTP/1.1" 200 -
+2023-06-14 17:48:16,228 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:16] "GET /static/picture/14.jpg HTTP/1.1" 200 -
+2023-06-14 17:48:17,416 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:17] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:48:18,520 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:18] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 17:48:18,898 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:18] "GET /order/view/mine?type=selling&page=2 HTTP/1.1" 200 -
+2023-06-14 17:48:20,144 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:20] "[33mPOST /exception/200 HTTP/1.1[0m" 404 -
+2023-06-14 17:48:21,084 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:21] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:48:21,092 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:21] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 17:48:21,288 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:21] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:48:21,548 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:21] "GET /static/photo/1.jpg HTTP/1.1" 200 -
+2023-06-14 17:48:55,485 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:55] "GET /code HTTP/1.1" 200 -
+2023-06-14 17:48:55,714 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:55] "GET /static/code.jpg HTTP/1.1" 200 -
+2023-06-14 17:49:03,278 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:03] "POST /login HTTP/1.1" 200 -
+2023-06-14 17:49:03,566 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:03] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:49:07,437 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:07] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:49:07,645 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:07] "GET /static/picture/11.jpg HTTP/1.1" 200 -
+2023-06-14 17:49:11,673 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:11] "GET /static/picture/11.jpg HTTP/1.1" 200 -
+2023-06-14 17:49:25,259 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:25] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:49:30,663 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:30] "GET /money HTTP/1.1" 200 -
+2023-06-14 17:49:32,051 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:32] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:49:34,248 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:34] "GET /order/view/mine?type=buying&page=1 HTTP/1.1" 200 -
+2023-06-14 17:49:35,670 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:35] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:49:36,339 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:36] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 17:49:37,353 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:37] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:49:38,235 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:38] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 17:49:39,103 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:39] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:04,297 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 17:50:04,297 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 17:50:09,903 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:09] "GET /order/view/mine?type=buying&page=1 HTTP/1.1" 200 -
+2023-06-14 17:50:11,005 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:11] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:11,258 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:11] "GET /static/photo/2.jpg HTTP/1.1" 200 -
+2023-06-14 17:50:12,102 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:12] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:16,089 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:16] "GET /money HTTP/1.1" 200 -
+2023-06-14 17:50:17,460 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:17] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:18,252 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:18] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 17:50:18,669 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:18] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:19,645 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:19] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 17:50:21,168 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:21] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:21,782 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:21] "GET /order/view/mine?type=buying&page=1 HTTP/1.1" 200 -
+2023-06-14 17:50:22,866 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:22] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:23,572 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:23] "GET /money HTTP/1.1" 200 -
+2023-06-14 17:50:24,645 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:24] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:26,718 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:26] "GET /money HTTP/1.1" 200 -
+2023-06-14 17:50:28,240 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:28] "GET /money HTTP/1.1" 200 -
+2023-06-14 17:50:47,451 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:47] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:49,437 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:49] "GET /order/view/collection?page=1 HTTP/1.1" 200 -
+2023-06-14 17:50:50,672 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:50] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:52,730 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:52] "GET /order/view/mine?type=buying&page=1 HTTP/1.1" 200 -
+2023-06-14 17:50:53,901 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:53] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:56,028 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:56] "GET /money HTTP/1.1" 200 -
+2023-06-14 17:50:56,828 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:56] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:51:04,751 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:51:04] "GET /order/searching?keyword=as&page=1 HTTP/1.1" 200 -
+2023-06-14 17:51:05,025 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:51:05] "GET /order/searching?keyword=as&page=2 HTTP/1.1" 200 -
+2023-06-14 17:51:05,038 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:51:05] "GET /static/picture/9.jpg HTTP/1.1" 200 -
+2023-06-14 17:51:06,009 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:51:06] "GET /order/information?order_id=9 HTTP/1.1" 200 -
+2023-06-14 17:51:08,458 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:51:08] "GET /user/information?id=2 HTTP/1.1" 200 -
+2023-06-14 17:51:08,460 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:51:08] "GET /bid/searching?order_id=9&page=1 HTTP/1.1" 200 -
+2023-06-14 17:51:08,473 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:51:08] "GET /static/picture/9.jpg HTTP/1.1" 200 -
+2023-06-14 17:51:34,271 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:51:34] "GET /order/information?order_id=9 HTTP/1.1" 200 -
+2023-06-14 17:51:34,486 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:51:34] "GET /static/picture/9.jpg HTTP/1.1" 200 -
+2023-06-14 17:51:56,468 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:51:56] "DELETE /order/deleting?order_id=9 HTTP/1.1" 200 -
+2023-06-14 17:52:01,259 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:52:01] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:55:51,105 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:55:51] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 17:55:51,108 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:55:51] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:55:51,396 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:55:51] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 17:55:52,885 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:55:52] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:55:54,365 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:55:54] "GET /static/photo/2.jpg HTTP/1.1" 200 -
+2023-06-14 17:56:02,629 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:02] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:56:09,000 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:09] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:56:12,400 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:12] "GET /order/view/verifying?page=1 HTTP/1.1" 200 -
+2023-06-14 17:56:20,537 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:20] "[33mGET /exception/1000?page=1 HTTP/1.1[0m" 404 -
+2023-06-14 17:56:24,063 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:24] "GET /order/view/verifying?page=1 HTTP/1.1" 200 -
+2023-06-14 17:56:31,370 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:31] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:56:31,371 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:31] "GET /user/information?id=0 HTTP/1.1" 200 -
+2023-06-14 17:56:33,773 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:33] "GET /order/view/verifying?page=1 HTTP/1.1" 200 -
+2023-06-14 17:56:37,164 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:37] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:56:39,444 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:39] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:56:45,995 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:45] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:56:47,808 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:47] "GET /order/information?order_id=16 HTTP/1.1" 200 -
+2023-06-14 17:56:48,086 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:48] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 17:56:48,089 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:48] "GET /user/information?id=1 HTTP/1.1" 200 -
+2023-06-14 17:56:48,089 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:48] "GET /bid/searching?order_id=16&page=1 HTTP/1.1" 200 -
+2023-06-14 17:56:57,674 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:57] "GET /order/information?order_id=16 HTTP/1.1" 200 -
+2023-06-14 17:56:58,168 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:58] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 17:56:58,223 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:58] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:57:00,430 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:57:00] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:57:06,362 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:57:06] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:57:39,129 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:57:39] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 17:57:39,176 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:57:39] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:57:39,439 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:57:39] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 17:57:40,957 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:57:40] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:57:44,055 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:57:44] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:57:44,058 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:57:44] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 17:57:54,765 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:57:54] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 17:57:54,771 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:57:54] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:57:57,413 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 17:57:57,413 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 17:59:14,669 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 17:59:14,669 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 17:59:24,345 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:59:24] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 17:59:24,352 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:59:24] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:59:24,695 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:59:24] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 17:59:28,264 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:59:28] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:59:31,498 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:59:31] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:59:38,523 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:59:38] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:59:41,944 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:59:41] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 17:59:41,996 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:59:41] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:59:43,276 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:59:43] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:00:33,798 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:33] "GET /code HTTP/1.1" 200 -
+2023-06-14 18:00:34,241 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:34] "GET /static/code.jpg HTTP/1.1" 200 -
+2023-06-14 18:00:37,132 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:37] "GET /code HTTP/1.1" 200 -
+2023-06-14 18:00:37,490 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:37] "GET /static/code.jpg HTTP/1.1" 200 -
+2023-06-14 18:00:38,533 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:38] "GET /code HTTP/1.1" 200 -
+2023-06-14 18:00:38,932 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:38] "GET /static/code.jpg HTTP/1.1" 200 -
+2023-06-14 18:00:40,250 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:40] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:00:40,656 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:40] "GET /static/photo/2.jpg HTTP/1.1" 200 -
+2023-06-14 18:00:42,760 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:42] "GET /code HTTP/1.1" 200 -
+2023-06-14 18:00:43,097 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:43] "GET /static/code.jpg HTTP/1.1" 200 -
+2023-06-14 18:00:44,626 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:44] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:00:45,354 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:45] "GET /code HTTP/1.1" 200 -
+2023-06-14 18:00:45,750 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:45] "GET /static/code.jpg HTTP/1.1" 200 -
+2023-06-14 18:00:46,588 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:46] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:00:50,841 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:50] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:00:51,750 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:51] "GET /code HTTP/1.1" 200 -
+2023-06-14 18:00:52,100 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:52] "GET /static/code.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:02,107 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:02] "POST /login HTTP/1.1" 200 -
+2023-06-14 18:01:02,551 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:02] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:01:02,930 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:02] "GET /static/photo/1.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:09,466 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:09] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 18:01:09,551 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:09] "GET /home HTTP/1.1" 200 -
+2023-06-14 18:01:09,672 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:09] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:01:10,080 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:10] "GET /static/photo/1.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:12,304 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:12] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 18:01:12,305 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:12] "GET /home HTTP/1.1" 200 -
+2023-06-14 18:01:12,464 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:12] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:01:12,834 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:12] "GET /static/photo/1.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:20,589 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:20] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:01:21,347 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:21] "GET /order/view/mine?type=buying&page=1 HTTP/1.1" 200 -
+2023-06-14 18:01:21,756 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:21] "GET /static/picture/12.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:21,756 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:21] "GET /order/view/mine?type=buying&page=2 HTTP/1.1" 200 -
+2023-06-14 18:01:21,826 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:21] "GET /static/picture/4.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:24,630 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:24] "[33mPOST /exception/100 HTTP/1.1[0m" 404 -
+2023-06-14 18:01:25,488 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:25] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 18:01:25,561 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:25] "GET /home HTTP/1.1" 200 -
+2023-06-14 18:01:25,732 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:25] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:01:26,095 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:26] "GET /static/photo/1.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:27,548 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:27] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 18:01:27,964 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:27] "GET /static/picture/14.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:27,985 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:27] "GET /order/view/mine?type=selling&page=2 HTTP/1.1" 200 -
+2023-06-14 18:01:27,992 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:27] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:29,515 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:29] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:01:30,414 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:30] "GET /order/view/mine?type=buying&page=1 HTTP/1.1" 200 -
+2023-06-14 18:01:30,710 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:30] "GET /static/picture/4.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:30,836 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:30] "GET /static/picture/12.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:30,836 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:30] "GET /order/view/mine?type=buying&page=2 HTTP/1.1" 200 -
+2023-06-14 18:01:32,308 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:32] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:01:35,055 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:35] "GET /order/view/verifying?page=1 HTTP/1.1" 200 -
+2023-06-14 18:01:35,479 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:35] "GET /static/picture/13.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:35,480 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:35] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:52,384 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:52] "GET /order/information?order_id=16 HTTP/1.1" 200 -
+2023-06-14 18:01:52,766 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:52] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:52,770 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:52] "GET /user/information?id=1 HTTP/1.1" 200 -
+2023-06-14 18:01:52,811 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:52] "GET /bid/searching?order_id=16&page=1 HTTP/1.1" 200 -
+2023-06-14 18:01:54,951 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:54] "GET /order/information?order_id=13 HTTP/1.1" 200 -
+2023-06-14 18:01:55,297 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:55] "GET /static/picture/13.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:55,565 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:55] "GET /bid/searching?order_id=13&page=1 HTTP/1.1" 200 -
+2023-06-14 18:01:55,569 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:55] "GET /user/information?id=2 HTTP/1.1" 200 -
+2023-06-14 18:02:29,425 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 18:02:29,425 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 18:02:32,330 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:32] "GET /order/view/verifying?page=1 HTTP/1.1" 200 -
+2023-06-14 18:02:32,725 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:32] "GET /static/picture/13.jpg HTTP/1.1" 200 -
+2023-06-14 18:02:32,736 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:32] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 18:02:44,352 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:44] "PUT /order/verifying HTTP/1.1" 200 -
+2023-06-14 18:02:48,403 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:48] "GET /order/view/verifying?page=1 HTTP/1.1" 200 -
+2023-06-14 18:02:48,835 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:48] "GET /static/picture/13.jpg HTTP/1.1" 200 -
+2023-06-14 18:02:51,077 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:51] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:02:51,691 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:51] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 18:02:52,091 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:52] "GET /static/picture/14.jpg HTTP/1.1" 200 -
+2023-06-14 18:02:52,093 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:52] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 18:02:52,095 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:52] "GET /order/view/mine?type=selling&page=2 HTTP/1.1" 200 -
+2023-06-14 18:02:55,493 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:55] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:02:56,314 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:56] "GET /order/view/mine?type=buying&page=1 HTTP/1.1" 200 -
+2023-06-14 18:02:56,779 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:56] "GET /static/picture/4.jpg HTTP/1.1" 200 -
+2023-06-14 18:02:56,779 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:56] "GET /static/picture/12.jpg HTTP/1.1" 200 -
+2023-06-14 18:02:56,781 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:56] "GET /order/view/mine?type=buying&page=2 HTTP/1.1" 200 -
+2023-06-14 18:02:58,837 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:58] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:03:02,775 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:03:02] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:03:03,990 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:03:03] "GET /money HTTP/1.1" 200 -
+2023-06-14 18:03:08,681 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:03:08] "PUT /money HTTP/1.1" 200 -
+2023-06-14 18:03:09,858 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:03:09] "GET /money HTTP/1.1" 200 -
+2023-06-14 18:03:16,119 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:03:16] "PUT /money HTTP/1.1" 200 -
+2023-06-14 18:03:16,497 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:03:16] "GET /money HTTP/1.1" 200 -
+2023-06-14 18:03:56,138 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:03:56] "GET /money HTTP/1.1" 200 -
+2023-06-14 18:04:03,801 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:04:03] "PUT /money HTTP/1.1" 200 -
+2023-06-14 18:04:04,173 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:04:04] "GET /money HTTP/1.1" 200 -
+2023-06-14 18:04:48,931 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:04:48] "GET /money HTTP/1.1" 200 -
+2023-06-14 18:05:58,057 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:05:58] "GET /money HTTP/1.1" 200 -
+2023-06-14 18:05:59,048 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:05:59] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 18:05:59,248 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:05:59] "GET /home HTTP/1.1" 200 -
+2023-06-14 18:05:59,367 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:05:59] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:05:59,756 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:05:59] "GET /static/photo/1.jpg HTTP/1.1" 200 -
+2023-06-14 18:06:01,500 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:01] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 18:06:01,968 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:01] "GET /static/picture/14.jpg HTTP/1.1" 200 -
+2023-06-14 18:06:02,019 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:02] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 18:06:02,021 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:02] "GET /order/view/mine?type=selling&page=2 HTTP/1.1" 200 -
+2023-06-14 18:06:03,563 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:03] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:06:04,185 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:04] "GET /order/view/mine?type=buying&page=1 HTTP/1.1" 200 -
+2023-06-14 18:06:04,619 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:04] "GET /static/picture/12.jpg HTTP/1.1" 200 -
+2023-06-14 18:06:04,620 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:04] "GET /static/picture/4.jpg HTTP/1.1" 200 -
+2023-06-14 18:06:04,637 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:04] "GET /order/view/mine?type=buying&page=2 HTTP/1.1" 200 -
+2023-06-14 18:06:07,873 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:07] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:06:08,611 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:08] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 18:06:10,705 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:10] "GET /static/picture/14.jpg HTTP/1.1" 200 -
+2023-06-14 18:06:12,130 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:12] "GET /static/picture/13.jpg HTTP/1.1" 200 -
+2023-06-14 18:06:13,417 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:13] "GET /static/picture/12.jpg HTTP/1.1" 200 -
+2023-06-14 18:06:16,398 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:16] "GET /static/picture/11.jpg HTTP/1.1" 200 -
+2023-06-14 18:32:23,722 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 18:32:23,723 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 18:32:28,311 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 18:32:28,311 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 18:32:39,782 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:32:39] "GET /code HTTP/1.1" 200 -
+2023-06-14 18:32:40,087 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:32:40] "GET /static/code.jpg HTTP/1.1" 200 -
+2023-06-14 18:32:46,107 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:32:46] "POST /login HTTP/1.1" 200 -
+2023-06-14 18:32:46,429 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:32:46] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:32:46,709 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:32:46] "GET /static/photo/1.jpg HTTP/1.1" 200 -
+2023-06-14 18:32:51,196 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:32:51] "GET /report/view/verifying?page=1 HTTP/1.1" 200 -
+2023-06-14 18:32:51,538 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:32:51] "GET /user/information?id=2 HTTP/1.1" 200 -
+2023-06-14 18:32:51,557 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:32:51] "GET /user/information?id=1 HTTP/1.1" 200 -
+2023-06-14 18:32:51,878 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:32:51] "GET /static/photo/2.jpg HTTP/1.1" 200 -
+2023-06-14 18:33:14,650 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:33:14] "PUT /report/verifying HTTP/1.1" 200 -
+2023-06-14 18:33:23,262 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:33:23] "PUT /report/verifying HTTP/1.1" 200 -
+2023-06-14 18:33:38,959 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:33:38] "PUT /report/verifying HTTP/1.1" 200 -
+2023-06-14 18:34:00,597 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:34:00] "GET /report/view/verifying?page=1 HTTP/1.1" 200 -
+2023-06-14 18:34:07,597 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:34:07] "PUT /report/verifying HTTP/1.1" 200 -
+2023-06-14 18:39:21,492 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:39:21] "[31m[1mGET /report/verifying HTTP/1.1[0m" 405 -
+2023-06-14 18:39:24,532 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:39:24] "PUT /report/verifying HTTP/1.1" 200 -
+2023-06-14 18:40:10,424 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 18:40:10,424 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 18:40:12,718 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:40:12] "PUT /report/verifying HTTP/1.1" 200 -
+2023-06-14 18:43:17,304 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 18:43:17,304 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 18:43:19,768 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:43:19] "PUT /report/verifying HTTP/1.1" 200 -

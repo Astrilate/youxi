@@ -1,11 +1,13 @@
 import os
 import re
 import time
+import random
 
 import jwt
 from flask import jsonify, request
 from flask_cors import CORS
 from sqlalchemy import and_
+from alipay import AliPay
 
 from app import db, redis_store
 from app.main import user
@@ -89,7 +91,7 @@ def temp_login():
 
 
 @user.route('/information', methods=['GET', 'OPTIONS'])
-@token().check_token("1")
+@token().check_token("0")
 def information(x):
     all_data = []
     search = users.query.filter(users.id == x["uid"]).first()
@@ -204,12 +206,33 @@ def money(x):
             return jsonify(code=400, message="金额应为正数")
         if operation == "in":
             User.update({"money": User.first().money + money})
+            private_key = open(os.path.join(os.path.dirname(__file__), "keys/app_private_key.pem")).read()
+            public_key = open(os.path.join(os.path.dirname(__file__), "keys/alipay_public_key.pem")).read()
+            alipay = AliPay(
+                appid="9021000122686870",
+                app_notify_url=None,
+                app_private_key_string=private_key,
+                alipay_public_key_string=public_key,
+                sign_type="RSA2",
+                debug=True,
+            )
+            random_int = random.randint(1, 1000000000000000)
+            order_string = alipay.api_alipay_trade_page_pay(
+                out_trade_no=str(random_int),
+                total_amount=str(money),
+                subject="用户充值",
+                return_url="youxi://xxx.com/paysuccess",
+                notify_url=None
+            )
+            pay_url = "https://openapi-sandbox.dl.alipaydev.com/gateway.do?" + order_string
+            db.session.commit()
+            return jsonify(code=200, message="success", data={"pay_url": pay_url})
         else:
             if User.first().money - money < 0:
                 return jsonify(code=400, message="账户余额不足")
             User.update({"money": User.first().money - money})
-        db.session.commit()
-        return jsonify(code=200, message="success")
+            db.session.commit()
+            return jsonify(code=200, message="success")
 
 
 @user.route('/reporting', methods=['POST', 'OPTIONS'])
@@ -274,18 +297,21 @@ def report_verifying(x):
         report_id = request.get_json().get("report_id")
         verifying = request.get_json().get("verifying")
         user_id = reports.query.filter(reports.id == report_id).first().user_id
+        suspected_id = reports.query.filter(reports.id == report_id).first().suspected_id
         time_now = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
         if verifying == "True":
-            users.query.filter(users.id == report_id).update({"credit": "黑名单"})
+            users.query.filter(users.id == suspected_id).update({"credit": "黑名单"})
             a = messages(time=time_now, user_id=user_id,
                          message=f"您举报的用户[{users.query.filter(users.id == user_id).first().username}]经核查确有违规行为，已被记入黑名单")
-            b = messages(time=time_now, user_id=report_id,
+            b = messages(time=time_now, user_id=suspected_id,
                          message=f"您被举报查实出现违规行为，已被记入黑名单")
             db.session.add_all([a, b])
+            db.session.commit()
         else:
             a = messages(time=time_now, user_id=user_id,
                          message=f"您举报的用户[{users.query.filter(users.id == user_id).first().username}]经核查未发现违规行为")
             db.session.add(a)
+            db.session.commit()
         reports.query.filter(reports.id == report_id).update({"status": "已审核"})
         db.session.commit()
         return jsonify(code=200, message="success")
