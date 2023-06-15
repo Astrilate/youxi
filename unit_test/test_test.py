@@ -11,25 +11,24 @@ def client():
         yield client
 
 
-def test_code(client):
+def test_0(client):
     r = client.get('/code')
-    print()
+    print(redis_store.get("code"))
     assert r.json.get("image") == "https://7f1192d863.imdo.co/static/code.jpg"
 
 
 @pytest.mark.parametrize('data, message', [
-    ({"username": "asdasd", "password": "5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8", "code": str(redis_store.get("code"))}, "登录成功"),
-    ({"username": "", "password": "5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8","code": str(redis_store.get("code"))}, "用户名不存在"),
-    ({"username": "asdasd", "password": "", "code": str(redis_store.get("code"))}, "密码错误"),
+    ({"username": "asdasd", "password": "5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8", "code": "1"}, "登录成功"),
+    ({"username": "", "password": "5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8","code": "1"}, "用户名不存在"),
+    ({"username": "asdasd", "password": "", "code": "1"}, "密码错误"),
     ({"username": "asdasd", "password": "5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8", "code": ""}, "验证码错误")
 ])
 def test_1(client, data, message):
+    if data["code"] != "":
+        data.update(code=redis_store.get("code"))
     r = client.post('/login', json=data, content_type='application/json')
     print(r)
     assert r.json.get("message") == message
-
-
-
 
 #
 # class Test_login:

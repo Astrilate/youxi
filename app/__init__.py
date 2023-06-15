@@ -14,3 +14,5 @@ app.config.from_object(config)
 app.config['SECRET_KEY'] = SECRET_KEY
 
 db = SQLAlchemy(app)
+
+
