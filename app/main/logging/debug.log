@@ -1,0 +1,1174 @@
+2023-06-14 12:09:31,627 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 12:09:31,628 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 12:09:43,067 - app - INFO - this is an info
+2023-06-14 12:09:43,068 - app - ERROR - this is an error
+2023-06-14 12:09:43,069 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 12:09:43] "GET / HTTP/1.1" 200 -
+2023-06-14 12:59:56,259 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 12:59:56,260 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 13:00:09,320 - app - INFO - this is an info
+2023-06-14 13:00:09,320 - app - ERROR - this is an error
+2023-06-14 13:00:09,321 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 13:00:09] "GET / HTTP/1.1" 200 -
+2023-06-14 13:00:24,413 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 13:00:24,414 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 17:43:23,182 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 17:43:23,183 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 17:44:25,540 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:25] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 17:44:25,567 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:25] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:44:25,841 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:25] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 17:44:28,823 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:28] "GET /static/picture/14.jpg HTTP/1.1" 200 -
+2023-06-14 17:44:28,905 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:28] "GET /static/picture/13.jpg HTTP/1.1" 200 -
+2023-06-14 17:44:31,859 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:31] "GET /static/picture/12.jpg HTTP/1.1" 200 -
+2023-06-14 17:44:34,869 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:34] "GET /static/picture/11.jpg HTTP/1.1" 200 -
+2023-06-14 17:44:42,519 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:42] "GET /code HTTP/1.1" 200 -
+2023-06-14 17:44:42,871 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:42] "GET /static/code.jpg HTTP/1.1" 200 -
+2023-06-14 17:44:50,289 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:50] "POST /login HTTP/1.1" 200 -
+2023-06-14 17:44:50,618 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:50] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:44:50,867 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:50] "GET /static/photo/1.jpg HTTP/1.1" 200 -
+2023-06-14 17:44:59,699 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:44:59] "GET /money HTTP/1.1" 200 -
+2023-06-14 17:45:09,490 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:45:09] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:45:12,179 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:45:12] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:45:12,782 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:45:12] "GET /user/information?id=2 HTTP/1.1" 200 -
+2023-06-14 17:45:13,021 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:45:13] "GET /static/photo/2.jpg HTTP/1.1" 200 -
+2023-06-14 17:45:13,602 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:45:13] "GET /static/photo/2.jpg HTTP/1.1" 200 -
+2023-06-14 17:45:13,607 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:45:13] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:45:16,435 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:45:16] "GET /static/photo/1.jpg HTTP/1.1" 200 -
+2023-06-14 17:45:40,919 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:45:40] "POST /reporting HTTP/1.1" 200 -
+2023-06-14 17:46:45,401 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:46:45] "POST /reporting HTTP/1.1" 200 -
+2023-06-14 17:46:53,343 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:46:53] "POST /reporting HTTP/1.1" 200 -
+2023-06-14 17:47:16,091 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:16] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:47:20,182 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:20] "[33mGET /exception/1000?page=1 HTTP/1.1[0m" 404 -
+2023-06-14 17:47:22,133 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:22] "GET /order/view/verifying?page=1 HTTP/1.1" 200 -
+2023-06-14 17:47:22,355 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:22] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 17:47:22,360 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:22] "GET /static/picture/13.jpg HTTP/1.1" 200 -
+2023-06-14 17:47:29,881 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:29] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 17:47:30,023 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:30] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:47:30,246 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:30] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:47:31,115 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:31] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 17:47:31,214 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:31] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:47:31,519 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:31] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:47:39,929 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:39] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:47:43,834 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:47:43] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:48:06,641 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:06] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:48:12,434 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:12] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 17:48:12,729 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:12] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 17:48:12,731 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:12] "GET /order/view/mine?type=selling&page=2 HTTP/1.1" 200 -
+2023-06-14 17:48:12,736 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:12] "GET /static/picture/14.jpg HTTP/1.1" 200 -
+2023-06-14 17:48:13,514 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:13] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:48:14,192 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:14] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 17:48:15,387 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:15] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:48:15,915 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:15] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 17:48:16,226 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:16] "GET /order/view/mine?type=selling&page=2 HTTP/1.1" 200 -
+2023-06-14 17:48:16,228 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:16] "GET /static/picture/14.jpg HTTP/1.1" 200 -
+2023-06-14 17:48:17,416 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:17] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:48:18,520 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:18] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 17:48:18,898 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:18] "GET /order/view/mine?type=selling&page=2 HTTP/1.1" 200 -
+2023-06-14 17:48:20,144 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:20] "[33mPOST /exception/200 HTTP/1.1[0m" 404 -
+2023-06-14 17:48:21,084 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:21] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:48:21,092 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:21] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 17:48:21,288 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:21] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:48:21,548 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:21] "GET /static/photo/1.jpg HTTP/1.1" 200 -
+2023-06-14 17:48:55,485 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:55] "GET /code HTTP/1.1" 200 -
+2023-06-14 17:48:55,714 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:48:55] "GET /static/code.jpg HTTP/1.1" 200 -
+2023-06-14 17:49:03,278 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:03] "POST /login HTTP/1.1" 200 -
+2023-06-14 17:49:03,566 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:03] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:49:07,437 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:07] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:49:07,645 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:07] "GET /static/picture/11.jpg HTTP/1.1" 200 -
+2023-06-14 17:49:11,673 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:11] "GET /static/picture/11.jpg HTTP/1.1" 200 -
+2023-06-14 17:49:25,259 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:25] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:49:30,663 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:30] "GET /money HTTP/1.1" 200 -
+2023-06-14 17:49:32,051 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:32] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:49:34,248 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:34] "GET /order/view/mine?type=buying&page=1 HTTP/1.1" 200 -
+2023-06-14 17:49:35,670 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:35] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:49:36,339 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:36] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 17:49:37,353 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:37] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:49:38,235 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:38] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 17:49:39,103 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:49:39] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:04,297 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 17:50:04,297 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 17:50:09,903 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:09] "GET /order/view/mine?type=buying&page=1 HTTP/1.1" 200 -
+2023-06-14 17:50:11,005 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:11] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:11,258 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:11] "GET /static/photo/2.jpg HTTP/1.1" 200 -
+2023-06-14 17:50:12,102 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:12] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:16,089 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:16] "GET /money HTTP/1.1" 200 -
+2023-06-14 17:50:17,460 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:17] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:18,252 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:18] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 17:50:18,669 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:18] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:19,645 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:19] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 17:50:21,168 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:21] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:21,782 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:21] "GET /order/view/mine?type=buying&page=1 HTTP/1.1" 200 -
+2023-06-14 17:50:22,866 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:22] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:23,572 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:23] "GET /money HTTP/1.1" 200 -
+2023-06-14 17:50:24,645 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:24] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:26,718 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:26] "GET /money HTTP/1.1" 200 -
+2023-06-14 17:50:28,240 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:28] "GET /money HTTP/1.1" 200 -
+2023-06-14 17:50:47,451 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:47] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:49,437 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:49] "GET /order/view/collection?page=1 HTTP/1.1" 200 -
+2023-06-14 17:50:50,672 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:50] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:52,730 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:52] "GET /order/view/mine?type=buying&page=1 HTTP/1.1" 200 -
+2023-06-14 17:50:53,901 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:53] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:50:56,028 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:56] "GET /money HTTP/1.1" 200 -
+2023-06-14 17:50:56,828 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:50:56] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:51:04,751 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:51:04] "GET /order/searching?keyword=as&page=1 HTTP/1.1" 200 -
+2023-06-14 17:51:05,025 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:51:05] "GET /order/searching?keyword=as&page=2 HTTP/1.1" 200 -
+2023-06-14 17:51:05,038 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:51:05] "GET /static/picture/9.jpg HTTP/1.1" 200 -
+2023-06-14 17:51:06,009 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:51:06] "GET /order/information?order_id=9 HTTP/1.1" 200 -
+2023-06-14 17:51:08,458 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:51:08] "GET /user/information?id=2 HTTP/1.1" 200 -
+2023-06-14 17:51:08,460 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:51:08] "GET /bid/searching?order_id=9&page=1 HTTP/1.1" 200 -
+2023-06-14 17:51:08,473 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:51:08] "GET /static/picture/9.jpg HTTP/1.1" 200 -
+2023-06-14 17:51:34,271 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:51:34] "GET /order/information?order_id=9 HTTP/1.1" 200 -
+2023-06-14 17:51:34,486 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:51:34] "GET /static/picture/9.jpg HTTP/1.1" 200 -
+2023-06-14 17:51:56,468 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:51:56] "DELETE /order/deleting?order_id=9 HTTP/1.1" 200 -
+2023-06-14 17:52:01,259 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:52:01] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:55:51,105 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:55:51] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 17:55:51,108 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:55:51] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:55:51,396 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:55:51] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 17:55:52,885 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:55:52] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:55:54,365 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:55:54] "GET /static/photo/2.jpg HTTP/1.1" 200 -
+2023-06-14 17:56:02,629 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:02] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:56:09,000 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:09] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:56:12,400 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:12] "GET /order/view/verifying?page=1 HTTP/1.1" 200 -
+2023-06-14 17:56:20,537 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:20] "[33mGET /exception/1000?page=1 HTTP/1.1[0m" 404 -
+2023-06-14 17:56:24,063 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:24] "GET /order/view/verifying?page=1 HTTP/1.1" 200 -
+2023-06-14 17:56:31,370 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:31] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:56:31,371 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:31] "GET /user/information?id=0 HTTP/1.1" 200 -
+2023-06-14 17:56:33,773 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:33] "GET /order/view/verifying?page=1 HTTP/1.1" 200 -
+2023-06-14 17:56:37,164 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:37] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:56:39,444 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:39] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:56:45,995 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:45] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:56:47,808 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:47] "GET /order/information?order_id=16 HTTP/1.1" 200 -
+2023-06-14 17:56:48,086 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:48] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 17:56:48,089 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:48] "GET /user/information?id=1 HTTP/1.1" 200 -
+2023-06-14 17:56:48,089 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:48] "GET /bid/searching?order_id=16&page=1 HTTP/1.1" 200 -
+2023-06-14 17:56:57,674 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:57] "GET /order/information?order_id=16 HTTP/1.1" 200 -
+2023-06-14 17:56:58,168 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:58] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 17:56:58,223 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:56:58] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:57:00,430 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:57:00] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:57:06,362 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:57:06] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:57:39,129 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:57:39] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 17:57:39,176 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:57:39] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:57:39,439 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:57:39] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 17:57:40,957 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:57:40] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:57:44,055 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:57:44] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:57:44,058 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:57:44] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 17:57:54,765 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:57:54] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 17:57:54,771 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:57:54] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:57:57,413 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 17:57:57,413 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 17:59:14,669 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 17:59:14,669 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 17:59:24,345 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:59:24] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 17:59:24,352 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:59:24] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:59:24,695 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:59:24] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 17:59:28,264 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:59:28] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:59:31,498 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:59:31] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:59:38,523 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:59:38] "GET /information HTTP/1.1" 200 -
+2023-06-14 17:59:41,944 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:59:41] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 17:59:41,996 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:59:41] "GET /home HTTP/1.1" 200 -
+2023-06-14 17:59:43,276 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 17:59:43] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:00:33,798 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:33] "GET /code HTTP/1.1" 200 -
+2023-06-14 18:00:34,241 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:34] "GET /static/code.jpg HTTP/1.1" 200 -
+2023-06-14 18:00:37,132 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:37] "GET /code HTTP/1.1" 200 -
+2023-06-14 18:00:37,490 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:37] "GET /static/code.jpg HTTP/1.1" 200 -
+2023-06-14 18:00:38,533 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:38] "GET /code HTTP/1.1" 200 -
+2023-06-14 18:00:38,932 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:38] "GET /static/code.jpg HTTP/1.1" 200 -
+2023-06-14 18:00:40,250 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:40] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:00:40,656 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:40] "GET /static/photo/2.jpg HTTP/1.1" 200 -
+2023-06-14 18:00:42,760 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:42] "GET /code HTTP/1.1" 200 -
+2023-06-14 18:00:43,097 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:43] "GET /static/code.jpg HTTP/1.1" 200 -
+2023-06-14 18:00:44,626 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:44] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:00:45,354 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:45] "GET /code HTTP/1.1" 200 -
+2023-06-14 18:00:45,750 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:45] "GET /static/code.jpg HTTP/1.1" 200 -
+2023-06-14 18:00:46,588 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:46] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:00:50,841 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:50] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:00:51,750 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:51] "GET /code HTTP/1.1" 200 -
+2023-06-14 18:00:52,100 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:00:52] "GET /static/code.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:02,107 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:02] "POST /login HTTP/1.1" 200 -
+2023-06-14 18:01:02,551 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:02] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:01:02,930 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:02] "GET /static/photo/1.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:09,466 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:09] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 18:01:09,551 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:09] "GET /home HTTP/1.1" 200 -
+2023-06-14 18:01:09,672 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:09] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:01:10,080 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:10] "GET /static/photo/1.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:12,304 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:12] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 18:01:12,305 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:12] "GET /home HTTP/1.1" 200 -
+2023-06-14 18:01:12,464 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:12] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:01:12,834 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:12] "GET /static/photo/1.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:20,589 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:20] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:01:21,347 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:21] "GET /order/view/mine?type=buying&page=1 HTTP/1.1" 200 -
+2023-06-14 18:01:21,756 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:21] "GET /static/picture/12.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:21,756 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:21] "GET /order/view/mine?type=buying&page=2 HTTP/1.1" 200 -
+2023-06-14 18:01:21,826 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:21] "GET /static/picture/4.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:24,630 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:24] "[33mPOST /exception/100 HTTP/1.1[0m" 404 -
+2023-06-14 18:01:25,488 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:25] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 18:01:25,561 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:25] "GET /home HTTP/1.1" 200 -
+2023-06-14 18:01:25,732 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:25] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:01:26,095 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:26] "GET /static/photo/1.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:27,548 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:27] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 18:01:27,964 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:27] "GET /static/picture/14.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:27,985 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:27] "GET /order/view/mine?type=selling&page=2 HTTP/1.1" 200 -
+2023-06-14 18:01:27,992 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:27] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:29,515 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:29] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:01:30,414 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:30] "GET /order/view/mine?type=buying&page=1 HTTP/1.1" 200 -
+2023-06-14 18:01:30,710 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:30] "GET /static/picture/4.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:30,836 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:30] "GET /static/picture/12.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:30,836 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:30] "GET /order/view/mine?type=buying&page=2 HTTP/1.1" 200 -
+2023-06-14 18:01:32,308 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:32] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:01:35,055 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:35] "GET /order/view/verifying?page=1 HTTP/1.1" 200 -
+2023-06-14 18:01:35,479 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:35] "GET /static/picture/13.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:35,480 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:35] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:52,384 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:52] "GET /order/information?order_id=16 HTTP/1.1" 200 -
+2023-06-14 18:01:52,766 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:52] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:52,770 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:52] "GET /user/information?id=1 HTTP/1.1" 200 -
+2023-06-14 18:01:52,811 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:52] "GET /bid/searching?order_id=16&page=1 HTTP/1.1" 200 -
+2023-06-14 18:01:54,951 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:54] "GET /order/information?order_id=13 HTTP/1.1" 200 -
+2023-06-14 18:01:55,297 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:55] "GET /static/picture/13.jpg HTTP/1.1" 200 -
+2023-06-14 18:01:55,565 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:55] "GET /bid/searching?order_id=13&page=1 HTTP/1.1" 200 -
+2023-06-14 18:01:55,569 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:01:55] "GET /user/information?id=2 HTTP/1.1" 200 -
+2023-06-14 18:02:29,425 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 18:02:29,425 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 18:02:32,330 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:32] "GET /order/view/verifying?page=1 HTTP/1.1" 200 -
+2023-06-14 18:02:32,725 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:32] "GET /static/picture/13.jpg HTTP/1.1" 200 -
+2023-06-14 18:02:32,736 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:32] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 18:02:44,352 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:44] "PUT /order/verifying HTTP/1.1" 200 -
+2023-06-14 18:02:48,403 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:48] "GET /order/view/verifying?page=1 HTTP/1.1" 200 -
+2023-06-14 18:02:48,835 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:48] "GET /static/picture/13.jpg HTTP/1.1" 200 -
+2023-06-14 18:02:51,077 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:51] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:02:51,691 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:51] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 18:02:52,091 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:52] "GET /static/picture/14.jpg HTTP/1.1" 200 -
+2023-06-14 18:02:52,093 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:52] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 18:02:52,095 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:52] "GET /order/view/mine?type=selling&page=2 HTTP/1.1" 200 -
+2023-06-14 18:02:55,493 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:55] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:02:56,314 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:56] "GET /order/view/mine?type=buying&page=1 HTTP/1.1" 200 -
+2023-06-14 18:02:56,779 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:56] "GET /static/picture/4.jpg HTTP/1.1" 200 -
+2023-06-14 18:02:56,779 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:56] "GET /static/picture/12.jpg HTTP/1.1" 200 -
+2023-06-14 18:02:56,781 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:56] "GET /order/view/mine?type=buying&page=2 HTTP/1.1" 200 -
+2023-06-14 18:02:58,837 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:02:58] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:03:02,775 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:03:02] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:03:03,990 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:03:03] "GET /money HTTP/1.1" 200 -
+2023-06-14 18:03:08,681 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:03:08] "PUT /money HTTP/1.1" 200 -
+2023-06-14 18:03:09,858 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:03:09] "GET /money HTTP/1.1" 200 -
+2023-06-14 18:03:16,119 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:03:16] "PUT /money HTTP/1.1" 200 -
+2023-06-14 18:03:16,497 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:03:16] "GET /money HTTP/1.1" 200 -
+2023-06-14 18:03:56,138 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:03:56] "GET /money HTTP/1.1" 200 -
+2023-06-14 18:04:03,801 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:04:03] "PUT /money HTTP/1.1" 200 -
+2023-06-14 18:04:04,173 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:04:04] "GET /money HTTP/1.1" 200 -
+2023-06-14 18:04:48,931 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:04:48] "GET /money HTTP/1.1" 200 -
+2023-06-14 18:05:58,057 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:05:58] "GET /money HTTP/1.1" 200 -
+2023-06-14 18:05:59,048 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:05:59] "POST /temp/login HTTP/1.1" 200 -
+2023-06-14 18:05:59,248 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:05:59] "GET /home HTTP/1.1" 200 -
+2023-06-14 18:05:59,367 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:05:59] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:05:59,756 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:05:59] "GET /static/photo/1.jpg HTTP/1.1" 200 -
+2023-06-14 18:06:01,500 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:01] "GET /order/view/mine?type=selling&page=1 HTTP/1.1" 200 -
+2023-06-14 18:06:01,968 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:01] "GET /static/picture/14.jpg HTTP/1.1" 200 -
+2023-06-14 18:06:02,019 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:02] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 18:06:02,021 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:02] "GET /order/view/mine?type=selling&page=2 HTTP/1.1" 200 -
+2023-06-14 18:06:03,563 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:03] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:06:04,185 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:04] "GET /order/view/mine?type=buying&page=1 HTTP/1.1" 200 -
+2023-06-14 18:06:04,619 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:04] "GET /static/picture/12.jpg HTTP/1.1" 200 -
+2023-06-14 18:06:04,620 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:04] "GET /static/picture/4.jpg HTTP/1.1" 200 -
+2023-06-14 18:06:04,637 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:04] "GET /order/view/mine?type=buying&page=2 HTTP/1.1" 200 -
+2023-06-14 18:06:07,873 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:07] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:06:08,611 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:08] "GET /static/picture/16.jpg HTTP/1.1" 200 -
+2023-06-14 18:06:10,705 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:10] "GET /static/picture/14.jpg HTTP/1.1" 200 -
+2023-06-14 18:06:12,130 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:12] "GET /static/picture/13.jpg HTTP/1.1" 200 -
+2023-06-14 18:06:13,417 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:13] "GET /static/picture/12.jpg HTTP/1.1" 200 -
+2023-06-14 18:06:16,398 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:06:16] "GET /static/picture/11.jpg HTTP/1.1" 200 -
+2023-06-14 18:32:23,722 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 18:32:23,723 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 18:32:28,311 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 18:32:28,311 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 18:32:39,782 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:32:39] "GET /code HTTP/1.1" 200 -
+2023-06-14 18:32:40,087 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:32:40] "GET /static/code.jpg HTTP/1.1" 200 -
+2023-06-14 18:32:46,107 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:32:46] "POST /login HTTP/1.1" 200 -
+2023-06-14 18:32:46,429 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:32:46] "GET /information HTTP/1.1" 200 -
+2023-06-14 18:32:46,709 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:32:46] "GET /static/photo/1.jpg HTTP/1.1" 200 -
+2023-06-14 18:32:51,196 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:32:51] "GET /report/view/verifying?page=1 HTTP/1.1" 200 -
+2023-06-14 18:32:51,538 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:32:51] "GET /user/information?id=2 HTTP/1.1" 200 -
+2023-06-14 18:32:51,557 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:32:51] "GET /user/information?id=1 HTTP/1.1" 200 -
+2023-06-14 18:32:51,878 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:32:51] "GET /static/photo/2.jpg HTTP/1.1" 200 -
+2023-06-14 18:33:14,650 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:33:14] "PUT /report/verifying HTTP/1.1" 200 -
+2023-06-14 18:33:23,262 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:33:23] "PUT /report/verifying HTTP/1.1" 200 -
+2023-06-14 18:33:38,959 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:33:38] "PUT /report/verifying HTTP/1.1" 200 -
+2023-06-14 18:34:00,597 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:34:00] "GET /report/view/verifying?page=1 HTTP/1.1" 200 -
+2023-06-14 18:34:07,597 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:34:07] "PUT /report/verifying HTTP/1.1" 200 -
+2023-06-14 18:39:21,492 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:39:21] "[31m[1mGET /report/verifying HTTP/1.1[0m" 405 -
+2023-06-14 18:39:24,532 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:39:24] "PUT /report/verifying HTTP/1.1" 200 -
+2023-06-14 18:40:10,424 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 18:40:10,424 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 18:40:12,718 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:40:12] "PUT /report/verifying HTTP/1.1" 200 -
+2023-06-14 18:43:17,304 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 18:43:17,304 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 18:43:19,768 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 18:43:19] "PUT /report/verifying HTTP/1.1" 200 -
+2023-06-14 22:04:34,068 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 22:04:34,068 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 22:04:38,757 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 22:04:38] "GET /code HTTP/1.1" 200 -
+2023-06-14 22:07:45,098 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 22:07:45] "GET /code HTTP/1.1" 200 -
+2023-06-14 22:08:36,663 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 22:08:36,663 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 22:34:00,180 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 22:34:00] "GET /code HTTP/1.1" 200 -
+2023-06-14 22:34:27,298 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 22:34:27] "POST /login HTTP/1.1" 200 -
+2023-06-14 22:40:11,354 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 22:40:11] "GET /code HTTP/1.1" 200 -
+2023-06-14 22:40:15,749 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 22:40:15,749 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 22:40:17,478 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 22:40:17] "GET /code HTTP/1.1" 200 -
+2023-06-14 22:40:20,016 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 22:40:20] "GET /code HTTP/1.1" 200 -
+2023-06-14 22:46:38,504 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-14 22:46:38,513 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 22:46:38] "GET /code HTTP/1.1" 200 -
+2023-06-14 22:46:38,513 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 68
+2023-06-14 22:46:38,519 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-14 22:46:38,520 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 22:46:38] "POST /login?username=asdasd&password=asdasd&code=klvc HTTP/1.1" 200 -
+2023-06-14 22:46:38,520 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login?username=asdasd&password=asdasd&code=klvc HTTP/1.1" 200 50
+2023-06-14 22:48:29,987 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-14 22:48:29,995 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 22:48:29] "GET /code HTTP/1.1" 200 -
+2023-06-14 22:48:29,996 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 68
+2023-06-14 22:48:30,000 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-14 22:48:30,002 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 22:48:30] "POST /login?username=asdasd&password=asdasd&code=oqpg HTTP/1.1" 200 -
+2023-06-14 22:48:30,002 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login?username=asdasd&password=asdasd&code=oqpg HTTP/1.1" 200 50
+2023-06-14 22:53:32,907 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-14 22:53:32,915 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 22:53:32] "GET /code HTTP/1.1" 200 -
+2023-06-14 22:53:32,916 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 68
+2023-06-14 22:53:32,920 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-14 22:53:32,921 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 22:53:32] "POST /login?username=asdasd&password=asdasd&code=zloi HTTP/1.1" 200 -
+2023-06-14 22:53:32,922 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login?username=asdasd&password=asdasd&code=zloi HTTP/1.1" 200 50
+2023-06-14 23:01:56,801 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-14 23:01:56,811 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 23:01:56] "GET /code HTTP/1.1" 200 -
+2023-06-14 23:01:56,811 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 68
+2023-06-14 23:01:56,815 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-14 23:01:56,816 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 23:01:56] "POST /login?username=asdasd&password=asdasd&code=wixe HTTP/1.1" 200 -
+2023-06-14 23:01:56,817 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login?username=asdasd&password=asdasd&code=wixe HTTP/1.1" 200 50
+2023-06-14 23:02:30,249 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-14 23:02:30,258 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 23:02:30] "GET /code HTTP/1.1" 200 -
+2023-06-14 23:02:30,258 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 68
+2023-06-14 23:02:30,262 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-14 23:02:30,263 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 23:02:30] "POST /login?username=asdasd&password=asdasd&code=gkjm HTTP/1.1" 200 -
+2023-06-14 23:02:30,264 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login?username=asdasd&password=asdasd&code=gkjm HTTP/1.1" 200 50
+2023-06-14 23:04:45,794 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-14 23:04:45,803 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 23:04:45] "GET /code HTTP/1.1" 200 -
+2023-06-14 23:04:45,803 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 68
+2023-06-14 23:04:45,807 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-14 23:04:45,809 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 23:04:45] "POST /login?username=asdasd&password=asdasd&code=emky HTTP/1.1" 200 -
+2023-06-14 23:04:45,809 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login?username=asdasd&password=asdasd&code=emky HTTP/1.1" 200 50
+2023-06-14 23:42:45,922 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 23:42:45] "GET /code HTTP/1.1" 200 -
+2023-06-14 23:45:46,262 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-14 23:45:46,262 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-14 23:45:54,892 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 23:45:54] "GET /code HTTP/1.1" 200 -
+2023-06-14 23:46:06,093 - werkzeug - INFO - 127.0.0.1 - - [14/Jun/2023 23:46:06] "POST /login HTTP/1.1" 200 -
+2023-06-15 00:13:10,663 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:13:12,943 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:21:31,048 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 00:21:31,048 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 00:21:54,629 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:21:54,649 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:21:54] "GET /code HTTP/1.1" 200 -
+2023-06-15 00:21:54,649 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 55
+2023-06-15 00:21:54,653 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:21:54,654 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:21:54] "POST /login?username=asdasd&password=asdasd&code=ynea HTTP/1.1" 200 -
+2023-06-15 00:21:54,655 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login?username=asdasd&password=asdasd&code=ynea HTTP/1.1" 200 50
+2023-06-15 00:22:40,979 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 00:22:40,979 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 00:22:48,309 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:22:48,329 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:22:48] "GET /code HTTP/1.1" 200 -
+2023-06-15 00:22:48,329 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 55
+2023-06-15 00:22:48,333 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:22:48,334 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:22:48] "POST /login?username=asdasd&password=asdasd&code=wnxh HTTP/1.1" 200 -
+2023-06-15 00:22:48,335 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login?username=asdasd&password=asdasd&code=wnxh HTTP/1.1" 200 50
+2023-06-15 00:23:19,417 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 00:23:19,418 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 00:23:24,414 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:23:24,435 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:23:24] "GET /code HTTP/1.1" 200 -
+2023-06-15 00:23:24,435 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 55
+2023-06-15 00:23:24,439 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:23:24,440 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:23:24] "POST /login?username=asdasd&password=asdasd&code=ozis HTTP/1.1" 200 -
+2023-06-15 00:23:24,440 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login?username=asdasd&password=asdasd&code=ozis HTTP/1.1" 200 50
+2023-06-15 00:24:20,543 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:24:20,551 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:24:20] "GET /code HTTP/1.1" 200 -
+2023-06-15 00:24:20,552 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 55
+2023-06-15 00:24:20,555 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:24:20,556 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:24:20] "POST /login?username=asdasd&password=asdasd&code=gvyh HTTP/1.1" 200 -
+2023-06-15 00:24:20,557 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login?username=asdasd&password=asdasd&code=gvyh HTTP/1.1" 200 50
+2023-06-15 00:24:53,005 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:24:53,013 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:24:53] "GET /code HTTP/1.1" 200 -
+2023-06-15 00:24:53,014 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 55
+2023-06-15 00:24:53,017 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:24:53,018 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:24:53] "POST /login?username=asdasd&password=asdasd&code=ksfo HTTP/1.1" 200 -
+2023-06-15 00:24:53,018 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login?username=asdasd&password=asdasd&code=ksfo HTTP/1.1" 200 50
+2023-06-15 00:25:44,225 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:25:44,234 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:25:44] "GET /code HTTP/1.1" 200 -
+2023-06-15 00:25:44,234 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 55
+2023-06-15 00:25:44,237 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:25:44,238 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:25:44] "POST /login?username=asdasd&password=asdasd&code=ypum HTTP/1.1" 200 -
+2023-06-15 00:25:44,239 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login?username=asdasd&password=asdasd&code=ypum HTTP/1.1" 200 50
+2023-06-15 00:26:02,684 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 00:26:02,684 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 00:26:09,363 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:26:09,383 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:26:09] "GET /code HTTP/1.1" 200 -
+2023-06-15 00:26:09,384 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 55
+2023-06-15 00:26:09,387 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:26:09,388 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:26:09] "POST /login?username=asdasd&password=asdasd&code=aobu HTTP/1.1" 200 -
+2023-06-15 00:26:09,389 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login?username=asdasd&password=asdasd&code=aobu HTTP/1.1" 200 50
+2023-06-15 00:27:12,790 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:27:12,800 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:27:12] "GET /code HTTP/1.1" 200 -
+2023-06-15 00:27:12,800 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 55
+2023-06-15 00:27:12,803 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:27:12,804 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:27:12] "POST /login?username=asdasd&password=asdasd&code=wvav HTTP/1.1" 200 -
+2023-06-15 00:27:12,804 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login?username=asdasd&password=asdasd&code=wvav HTTP/1.1" 200 50
+2023-06-15 00:27:21,932 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:27:21] "POST /login HTTP/1.1" 200 -
+2023-06-15 00:27:42,465 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 00:27:42,465 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 00:27:49,591 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:27:49,611 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:27:49] "GET /code HTTP/1.1" 200 -
+2023-06-15 00:27:49,611 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 55
+2023-06-15 00:27:49,614 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:27:49,616 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:27:49] "POST /login?username=asdasd&password=5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8&code=vqle HTTP/1.1" 200 -
+2023-06-15 00:27:49,616 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login?username=asdasd&password=5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8&code=vqle HTTP/1.1" 200 50
+2023-06-15 00:31:06,859 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 00:31:06,860 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 00:31:12,232 - app - INFO - asdasd 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 gyim
+2023-06-15 00:31:12,240 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:31:12] "POST /login HTTP/1.1" 200 -
+2023-06-15 00:32:01,352 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:32:01,371 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:32:01] "GET /code HTTP/1.1" 200 -
+2023-06-15 00:32:01,371 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 55
+2023-06-15 00:32:01,374 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:32:01,376 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:32:01] "POST /login?username=asdasd&password=5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8&code=wbbk HTTP/1.1" 200 -
+2023-06-15 00:32:01,376 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login?username=asdasd&password=5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8&code=wbbk HTTP/1.1" 200 50
+2023-06-15 00:38:17,034 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 00:38:17,034 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 00:38:26,603 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:38:26,623 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:38:26] "GET /code HTTP/1.1" 200 -
+2023-06-15 00:38:26,623 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 55
+2023-06-15 00:38:26,626 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 00:38:26,628 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 00:38:26] "POST /login HTTP/1.1" 200 -
+2023-06-15 00:38:26,628 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login HTTP/1.1" 200 50
+2023-06-15 00:40:26,864 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 00:40:26,864 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 00:44:56,891 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 00:44:56,892 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 00:47:00,646 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 00:47:00,647 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 00:51:39,589 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 00:51:39,589 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 00:51:51,468 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 00:51:51,469 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 01:05:15,051 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 01:05:15,051 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 01:05:19,644 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 01:05:19,664 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:05:19] "GET /code HTTP/1.1" 200 -
+2023-06-15 01:05:19,665 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 55
+2023-06-15 01:05:19,668 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 01:05:19,670 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:05:19] "POST /login HTTP/1.1" 200 -
+2023-06-15 01:05:19,670 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login HTTP/1.1" 200 50
+2023-06-15 01:07:30,161 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 01:07:30,161 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 01:07:41,893 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 01:07:41,912 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:07:41] "GET /code HTTP/1.1" 200 -
+2023-06-15 01:07:41,913 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 55
+2023-06-15 01:07:41,916 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 01:07:41,918 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:07:41] "POST /login HTTP/1.1" 200 -
+2023-06-15 01:07:41,918 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login HTTP/1.1" 200 50
+2023-06-15 01:11:15,361 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 01:11:15,361 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 01:11:22,367 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 01:11:22,386 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:11:22] "GET /code HTTP/1.1" 200 -
+2023-06-15 01:11:22,387 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 55
+2023-06-15 01:11:22,390 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 01:11:22,391 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:11:22] "POST /login HTTP/1.1" 200 -
+2023-06-15 01:11:22,392 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login HTTP/1.1" 200 50
+2023-06-15 01:13:46,443 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 01:13:46,443 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 01:13:51,984 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 01:13:52,003 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:13:52] "GET /code HTTP/1.1" 200 -
+2023-06-15 01:13:52,004 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 55
+2023-06-15 01:18:15,419 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 01:18:15,419 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 01:18:19,391 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 01:18:19,411 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:18:19] "GET /code HTTP/1.1" 200 -
+2023-06-15 01:18:19,412 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 55
+2023-06-15 01:18:19,415 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 01:18:19,416 - app - INFO - asdasd 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 qnzp
+2023-06-15 01:18:19,423 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:18:19] "POST /login HTTP/1.1" 200 -
+2023-06-15 01:18:19,423 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login HTTP/1.1" 200 271
+2023-06-15 01:18:31,910 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 01:18:31,910 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 01:18:48,929 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 01:18:48,950 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:18:48] "GET /code HTTP/1.1" 200 -
+2023-06-15 01:18:48,950 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 55
+2023-06-15 01:18:48,953 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 01:18:48,954 - app - INFO - asdasd 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 blyh
+2023-06-15 01:18:48,961 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:18:48] "POST /login HTTP/1.1" 200 -
+2023-06-15 01:18:48,961 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login HTTP/1.1" 200 271
+2023-06-15 01:19:06,837 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 01:19:06,837 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 01:19:17,897 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 01:19:17,917 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:19:17] "GET /code HTTP/1.1" 200 -
+2023-06-15 01:19:17,918 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "GET /code HTTP/1.1" 200 55
+2023-06-15 01:19:17,921 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2023-06-15 01:19:17,923 - app - INFO - asdasd 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 xlnu
+2023-06-15 01:19:17,929 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 01:19:17] "POST /login HTTP/1.1" 200 -
+2023-06-15 01:19:17,930 - urllib3.connectionpool - DEBUG - http://127.0.0.1:5000 "POST /login HTTP/1.1" 200 271
+2023-06-15 22:51:11,672 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 22:51:11,672 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 22:51:29,168 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 22:51:29,168 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 22:55:43,589 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 22:55:43,589 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 22:55:50,821 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 22:55:50,821 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 22:56:10,087 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 22:56:10] "GET /exception/1000?page=1 HTTP/1.1" 200 -
+2023-06-15 22:57:51,549 - werkzeug - ERROR - 127.0.0.1 - - [15/Jun/2023 22:57:51] code 400, message Bad request version ('\x13\x01\x13\x02\x13\x03À+À,Ì©À/À0Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x95\x00\x00\x00\x17\x00\x15\x00\x00\x1228m8152x58.goho.co\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+2023-06-15 22:57:51,553 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 22:57:51] "[35m[1m  ü_éÇNÞ°ß½rþ_^ÎöÀDÝRÂ°ÞZ] èåQéwî«j§%rÀYROAmÍ0óÞ²oN"¥ À+À,Ì©À/À0Ì¨ÀÀ   / 5       28m8152x58.goho.co   ÿ   [0m" HTTPStatus.BAD_REQUEST -
+2023-06-15 22:57:55,006 - werkzeug - ERROR - 127.0.0.1 - - [15/Jun/2023 22:57:55] code 400, message Bad request version ('°\x0eÏÏ\\\x0f\x0fm|\x94c\x07\x8c\x05tÐÜ±°¦\x19\x07\x0f\x12®j\x83Ù@¶x')
+2023-06-15 22:57:55,008 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 22:57:55] "[35m[1m  üQÀ\.;]õÎâ%X¢«Ì?#B7u­.l!d¢b °ÏÏ\m|ctÐÜ±°¦®jÙ@¶x[0m" HTTPStatus.BAD_REQUEST -
+2023-06-15 22:57:58,278 - werkzeug - ERROR - 127.0.0.1 - - [15/Jun/2023 22:57:58] code 400, message Bad request version ('\x13\x01\x13\x02\x13\x03À+À,Ì©À/À0Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x95\x00\x00\x00\x17\x00\x15\x00\x00\x1228m8152x58.goho.co\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+2023-06-15 22:57:58,279 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 22:57:58] "[35m[1m  ü AË,X.³à¦i`âô1|ËO­'¨wcx y 8 ¦ ?PGZÊÌhi±w{juQ¡¯¥o=ó__ À+À,Ì©À/À0Ì¨ÀÀ   / 5       28m8152x58.goho.co   ÿ   [0m" HTTPStatus.BAD_REQUEST -
+2023-06-15 22:59:56,203 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 22:59:56] "GET /home HTTP/1.1" 200 -
+2023-06-15 23:00:02,835 - app - ERROR - Exception on /code [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1002, in _connect
+    raise err
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\view.py", line 31, in code
+    redis_store.set("code", b, 60)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\commands\core.py", line 2313, in set
+    return self.execute_command("SET", *pieces, **options)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1457, in get_connection
+    connection.connect()
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+2023-06-15 23:00:02,839 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:00:02] "[35m[1mGET /code HTTP/1.1[0m" 500 -
+2023-06-15 23:00:29,151 - app - ERROR - Exception on /code [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1002, in _connect
+    raise err
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\view.py", line 31, in code
+    redis_store.set("code", b, 60)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\commands\core.py", line 2313, in set
+    return self.execute_command("SET", *pieces, **options)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1457, in get_connection
+    connection.connect()
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+2023-06-15 23:00:29,152 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:00:29] "[35m[1mGET /code HTTP/1.1[0m" 500 -
+2023-06-15 23:00:54,536 - app - ERROR - Exception on /code [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1002, in _connect
+    raise err
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\view.py", line 31, in code
+    redis_store.set("code", b, 60)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\commands\core.py", line 2313, in set
+    return self.execute_command("SET", *pieces, **options)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1457, in get_connection
+    connection.connect()
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+2023-06-15 23:00:54,538 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:00:54] "[35m[1mGET /code HTTP/1.1[0m" 500 -
+2023-06-15 23:02:08,827 - app - ERROR - Exception on /code [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1002, in _connect
+    raise err
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\view.py", line 31, in code
+    redis_store.set("code", b, 60)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\commands\core.py", line 2313, in set
+    return self.execute_command("SET", *pieces, **options)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1457, in get_connection
+    connection.connect()
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+2023-06-15 23:02:08,829 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:02:08] "[35m[1mGET /code HTTP/1.1[0m" 500 -
+2023-06-15 23:03:32,390 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:03:32] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:03:42,662 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:03:42] "POST /register HTTP/1.1" 200 -
+2023-06-15 23:03:43,109 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:03:43] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:03:46,961 - app - INFO - asdasd 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 rhof
+2023-06-15 23:03:46,963 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:03:46] "POST /login HTTP/1.1" 200 -
+2023-06-15 23:03:47,415 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:03:47] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:04:38,292 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:04:38] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:04:44,462 - app - INFO - asdasd 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 skdc
+2023-06-15 23:04:44,465 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:04:44] "POST /login HTTP/1.1" 200 -
+2023-06-15 23:04:45,003 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:04:45] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:04:49,026 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:04:49] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:04:52,613 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:04:52] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:04:57,003 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:04:57] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:05:06,289 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:05:06] "POST /temp/login HTTP/1.1" 200 -
+2023-06-15 23:05:06,404 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:05:06] "GET /home HTTP/1.1" 200 -
+2023-06-15 23:05:08,870 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:05:08,872 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:05:08] "[35m[1mGET /information HTTP/1.1[0m" 500 -
+2023-06-15 23:05:16,043 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:05:16,044 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:05:16] "[35m[1mGET /information HTTP/1.1[0m" 500 -
+2023-06-15 23:05:19,001 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:05:19] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:05:24,178 - app - INFO - asdasd 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 gzns
+2023-06-15 23:05:24,181 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:05:24] "POST /login HTTP/1.1" 200 -
+2023-06-15 23:05:24,672 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:05:24] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:06:45,916 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 23:06:45,916 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 23:06:57,515 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:06:57] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:07:04,491 - app - INFO - asdasd 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 otof
+2023-06-15 23:07:04,496 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:07:04] "POST /login HTTP/1.1" 200 -
+2023-06-15 23:07:04,895 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:07:04] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:10:35,438 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 23:10:35,439 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 23:12:07,822 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 23:12:07,822 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 23:14:58,158 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-15 23:14:58,158 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-15 23:15:20,127 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:15:20] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:15:29,191 - app - INFO - asdasd 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 otqf
+2023-06-15 23:15:29,205 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:15:29] "POST /login HTTP/1.1" 200 -
+2023-06-15 23:15:29,647 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:15:29] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:15:31,800 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:15:31] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:15:34,408 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:15:34] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:16:08,512 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:16:08] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:16:12,666 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:16:12] "GET /home HTTP/1.1" 200 -
+2023-06-15 23:16:14,385 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:16:14] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:17:15,424 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:17:15] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:17:32,322 - app - INFO - asdasd 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 zdhn
+2023-06-15 23:17:32,368 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:17:32] "POST /login HTTP/1.1" 200 -
+2023-06-15 23:17:32,959 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:17:32] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:17:55,231 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:17:55] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:18:19,946 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:18:19] "POST /register HTTP/1.1" 200 -
+2023-06-15 23:18:25,241 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:18:25] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:18:46,239 - app - INFO - test0615 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 isgw
+2023-06-15 23:18:46,241 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:18:46] "POST /login HTTP/1.1" 200 -
+2023-06-15 23:18:46,686 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:18:46] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:22:01,276 - app - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 51, in login
+    code = get_json.get("code").lower()
+AttributeError: 'NoneType' object has no attribute 'lower'
+2023-06-15 23:22:01,281 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:22:01] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2023-06-15 23:22:29,097 - app - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 51, in login
+    code = get_json.get("code").lower()
+AttributeError: 'NoneType' object has no attribute 'lower'
+2023-06-15 23:22:29,098 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:22:29] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2023-06-15 23:22:29,786 - app - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 51, in login
+    code = get_json.get("code").lower()
+AttributeError: 'NoneType' object has no attribute 'lower'
+2023-06-15 23:22:29,787 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:22:29] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2023-06-15 23:23:16,465 - app - INFO - 1243 1324 abcd
+2023-06-15 23:23:16,468 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:23:16] "POST /login HTTP/1.1" 200 -
+2023-06-15 23:33:51,078 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:33:51] "GET /home HTTP/1.1" 200 -
+2023-06-15 23:33:53,962 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:33:53] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:34:21,332 - app - INFO - test0615 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 otqf
+2023-06-15 23:34:21,334 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:34:21] "POST /login HTTP/1.1" 200 -
+2023-06-15 23:34:21,875 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:34:21] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:34:48,746 - app - INFO - test0615 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 sbki
+2023-06-15 23:34:48,748 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:34:48] "POST /login HTTP/1.1" 200 -
+2023-06-15 23:34:49,230 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:34:49] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:35:26,951 - app - INFO - test0615 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 pvni
+2023-06-15 23:35:26,953 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:35:26] "POST /login HTTP/1.1" 200 -
+2023-06-15 23:35:27,339 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:35:27] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:36:32,481 - app - INFO - test061523 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 anek
+2023-06-15 23:36:32,483 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:36:32] "POST /login HTTP/1.1" 200 -
+2023-06-15 23:36:32,925 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:36:32] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:37:03,689 - app - INFO - test061523 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 iexk
+2023-06-15 23:37:03,691 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:37:03] "POST /login HTTP/1.1" 200 -
+2023-06-15 23:37:04,156 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:37:04] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:37:26,347 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:37:26] "POST /register HTTP/1.1" 200 -
+2023-06-15 23:37:28,416 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:37:28] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:38:41,586 - app - INFO - test061523 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 eryz
+2023-06-15 23:38:41,589 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:38:41] "POST /login HTTP/1.1" 200 -
+2023-06-15 23:38:41,965 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:38:41] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:38:54,523 - app - INFO - test061523 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 inuu
+2023-06-15 23:38:54,526 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:38:54] "POST /login HTTP/1.1" 200 -
+2023-06-15 23:38:54,902 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:38:54,905 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:38:54] "[35m[1mGET /information HTTP/1.1[0m" 500 -
+2023-06-15 23:38:59,305 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:38:59,307 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:38:59] "[35m[1mGET /information HTTP/1.1[0m" 500 -
+2023-06-15 23:39:03,260 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:39:03,262 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:39:03] "[35m[1mGET /information HTTP/1.1[0m" 500 -
+2023-06-15 23:39:09,811 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:39:09] "GET /order/information?order_id=1 HTTP/1.1" 200 -
+2023-06-15 23:39:10,186 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:39:10] "GET /user/information?id=2 HTTP/1.1" 200 -
+2023-06-15 23:39:10,187 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:39:10] "GET /bid/searching?order_id=1&page=1 HTTP/1.1" 200 -
+2023-06-15 23:39:56,606 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:39:56] "POST /neworder HTTP/1.1" 200 -
+2023-06-15 23:39:58,799 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:39:58,801 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:39:58] "[35m[1mGET /information HTTP/1.1[0m" 500 -
+2023-06-15 23:39:59,004 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:39:59] "GET /exception/1000?page=1 HTTP/1.1" 200 -
+2023-06-15 23:40:01,289 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:40:01,290 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:40:01] "[35m[1mGET /information HTTP/1.1[0m" 500 -
+2023-06-15 23:40:48,397 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:40:48] "POST /temp/login HTTP/1.1" 200 -
+2023-06-15 23:40:48,465 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:40:48] "GET /home HTTP/1.1" 200 -
+2023-06-15 23:42:32,554 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:42:32] "POST /temp/login HTTP/1.1" 200 -
+2023-06-15 23:42:32,690 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:42:32] "GET /home HTTP/1.1" 200 -
+2023-06-15 23:42:34,645 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:42:34,647 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:42:34] "[35m[1mGET /information HTTP/1.1[0m" 500 -
+2023-06-15 23:42:37,620 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:42:37,622 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:42:37] "[35m[1mGET /information HTTP/1.1[0m" 500 -
+2023-06-15 23:42:41,433 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:42:41] "GET /order/information?order_id=2 HTTP/1.1" 200 -
+2023-06-15 23:42:41,807 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:42:41] "GET /user/information?id=5 HTTP/1.1" 200 -
+2023-06-15 23:42:41,826 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:42:41] "GET /bid/searching?order_id=2&page=1 HTTP/1.1" 200 -
+2023-06-15 23:42:46,095 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:42:46,097 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:42:46] "[35m[1mGET /information HTTP/1.1[0m" 500 -
+2023-06-15 23:42:47,352 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:42:47] "GET /order/information?order_id=2 HTTP/1.1" 200 -
+2023-06-15 23:42:47,710 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:42:47] "GET /bid/searching?order_id=2&page=1 HTTP/1.1" 200 -
+2023-06-15 23:42:47,759 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:42:47] "GET /user/information?id=5 HTTP/1.1" 200 -
+2023-06-15 23:42:51,914 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:42:51,916 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:42:51] "[35m[1mGET /information HTTP/1.1[0m" 500 -
+2023-06-15 23:42:55,664 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:42:55,665 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:42:55] "[35m[1mGET /information HTTP/1.1[0m" 500 -
+2023-06-15 23:43:36,617 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:43:36] "POST /temp/login HTTP/1.1" 200 -
+2023-06-15 23:43:36,619 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:43:36] "GET /home HTTP/1.1" 200 -
+2023-06-15 23:43:38,134 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:43:38] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:43:39,182 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:43:39,183 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:43:39] "[35m[1mGET /information HTTP/1.1[0m" 500 -
+2023-06-15 23:43:42,374 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:43:42,376 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:43:42] "[35m[1mGET /information HTTP/1.1[0m" 500 -
+2023-06-15 23:43:48,667 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:43:48] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:43:53,352 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:43:53] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:43:54,511 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:43:54,513 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:43:54] "[35m[1mGET /information HTTP/1.1[0m" 500 -
+2023-06-15 23:44:10,684 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:44:10] "POST /register HTTP/1.1" 200 -
+2023-06-15 23:44:14,996 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:44:14] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:44:23,955 - app - INFO - 1234 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 cdcl
+2023-06-15 23:44:23,957 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:44:23] "POST /login HTTP/1.1" 200 -
+2023-06-15 23:44:24,246 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:44:24] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:48:35,258 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:48:35] "GET /code HTTP/1.1" 200 -
+2023-06-15 23:48:44,550 - app - INFO - 12345 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 saxl
+2023-06-15 23:48:44,553 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:48:44] "POST /login HTTP/1.1" 200 -
+2023-06-15 23:48:44,809 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:48:44] "GET /code HTTP/1.1" 200 -

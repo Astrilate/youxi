@@ -1,0 +1,487 @@
+2023-06-14 12:09:43,068 - app - ERROR - this is an error
+2023-06-14 13:00:09,320 - app - ERROR - this is an error
+2023-06-15 22:57:51,549 - werkzeug - ERROR - 127.0.0.1 - - [15/Jun/2023 22:57:51] code 400, message Bad request version ('\x13\x01\x13\x02\x13\x03À+À,Ì©À/À0Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x95\x00\x00\x00\x17\x00\x15\x00\x00\x1228m8152x58.goho.co\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+2023-06-15 22:57:55,006 - werkzeug - ERROR - 127.0.0.1 - - [15/Jun/2023 22:57:55] code 400, message Bad request version ('°\x0eÏÏ\\\x0f\x0fm|\x94c\x07\x8c\x05tÐÜ±°¦\x19\x07\x0f\x12®j\x83Ù@¶x')
+2023-06-15 22:57:58,278 - werkzeug - ERROR - 127.0.0.1 - - [15/Jun/2023 22:57:58] code 400, message Bad request version ('\x13\x01\x13\x02\x13\x03À+À,Ì©À/À0Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x95\x00\x00\x00\x17\x00\x15\x00\x00\x1228m8152x58.goho.co\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+2023-06-15 23:00:02,835 - app - ERROR - Exception on /code [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1002, in _connect
+    raise err
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\view.py", line 31, in code
+    redis_store.set("code", b, 60)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\commands\core.py", line 2313, in set
+    return self.execute_command("SET", *pieces, **options)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1457, in get_connection
+    connection.connect()
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+2023-06-15 23:00:29,151 - app - ERROR - Exception on /code [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1002, in _connect
+    raise err
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\view.py", line 31, in code
+    redis_store.set("code", b, 60)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\commands\core.py", line 2313, in set
+    return self.execute_command("SET", *pieces, **options)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1457, in get_connection
+    connection.connect()
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+2023-06-15 23:00:54,536 - app - ERROR - Exception on /code [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1002, in _connect
+    raise err
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\view.py", line 31, in code
+    redis_store.set("code", b, 60)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\commands\core.py", line 2313, in set
+    return self.execute_command("SET", *pieces, **options)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1457, in get_connection
+    connection.connect()
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+2023-06-15 23:02:08,827 - app - ERROR - Exception on /code [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 699, in connect
+    sock = self.retry.call_with_retry(
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\retry.py", line 46, in call_with_retry
+    return do()
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 700, in <lambda>
+    lambda: self._connect(), lambda error: self.disconnect(error)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1002, in _connect
+    raise err
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 990, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\view.py", line 31, in code
+    redis_store.set("code", b, 60)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\commands\core.py", line 2313, in set
+    return self.execute_command("SET", *pieces, **options)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\client.py", line 1266, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 1457, in get_connection
+    connection.connect()
+  File "C:\Users\UltAshes\AppData\Roaming\Python\Python310\site-packages\redis\connection.py", line 705, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+2023-06-15 23:05:08,870 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:05:16,043 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:22:01,276 - app - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 51, in login
+    code = get_json.get("code").lower()
+AttributeError: 'NoneType' object has no attribute 'lower'
+2023-06-15 23:22:29,097 - app - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 51, in login
+    code = get_json.get("code").lower()
+AttributeError: 'NoneType' object has no attribute 'lower'
+2023-06-15 23:22:29,786 - app - ERROR - Exception on /login [POST]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 51, in login
+    code = get_json.get("code").lower()
+AttributeError: 'NoneType' object has no attribute 'lower'
+2023-06-15 23:38:54,902 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:38:59,305 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:39:03,260 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:39:58,799 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:40:01,289 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:42:34,645 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:42:37,620 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:42:46,095 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:42:51,914 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:42:55,664 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:43:39,182 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:43:42,374 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-15 23:43:54,511 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\UltAshes\AppData\Local\Programs\Python\Python310\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
