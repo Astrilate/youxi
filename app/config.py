@@ -7,7 +7,7 @@ from app.main.logging.log_path import LOG_DIR
 
 
 USERNAME = 'root'
-PASSWORD = 'krcusz26wrh'
+PASSWORD = '123456'
 HOST = '127.0.0.1'
 PORT = '3306'
 DATABASE = 'youxi'

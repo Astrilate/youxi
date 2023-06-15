@@ -24,7 +24,7 @@ class orders(db.Model):
     picture = db.Column(db.VARCHAR(200), nullable=True)
     game = db.Column(db.VARCHAR(200), nullable=False)
     resources = db.Column(db.VARCHAR(200), nullable=False)
-    status = db.Column(db.Enum("待审核", "已通过", "待验货", "待重审", "待发货", "已结束", "异常1", "异常2"), default="待审核", nullable=False)
+    status = db.Column(db.Enum("待审核", "已通过", "待验货", "待重审", "待发货", "已结束", "异常"), default="待审核", nullable=False)
     price = db.Column(db.Float, nullable=False)
     money = db.Column(db.Enum("否", "是", "已结束"), default="否", nullable=False)
     buyer_id = db.Column(db.Integer, nullable=True)
