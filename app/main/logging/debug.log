@@ -1172,3 +1172,17 @@ TypeError: can only concatenate str (not "NoneType") to str
 2023-06-15 23:48:44,550 - app - INFO - 12345 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 saxl
 2023-06-15 23:48:44,553 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:48:44] "POST /login HTTP/1.1" 200 -
 2023-06-15 23:48:44,809 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2023 23:48:44] "GET /code HTTP/1.1" 200 -
+2023-06-16 01:40:22,161 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-16 01:40:22,161 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-16 01:40:31,501 - app - INFO - asdasd 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 none
+2023-06-16 01:40:31,517 - app - INFO -  5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 none
+2023-06-16 01:40:31,526 - app - INFO - asdasd  none
+2023-06-16 01:40:31,535 - app - INFO - asdasd 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 
+2023-06-16 01:48:09,526 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-06-16 01:48:09,526 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-06-16 01:48:16,540 - app - INFO - asdasd 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 none
+2023-06-16 01:48:16,654 - app - INFO -  5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 none
+2023-06-16 01:48:16,664 - app - INFO - asdasd  none
+2023-06-16 01:48:16,673 - app - INFO - asdasd 5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8 
