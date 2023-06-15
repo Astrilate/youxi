@@ -1,0 +1,3 @@
+在manage函数的最底下加两行这个应该就可以跑了
+    load_chat_history()  # 加载聊天记录
+    asyncio.run(main1())  # 启动异步事件循环
