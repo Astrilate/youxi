@@ -37,7 +37,7 @@ def code():
 @view.route('/home', methods=['GET', 'OPTIONS'])
 def home():
     all_data = []
-    Order = orders.query.order_by(orders.id.desc()).limit(5)
+    Order = orders.query.filter(orders.status == "已通过").limit(5)
     for each in Order:
         idata = {}
         idata.update(order_id=each.id, order_title=each.title,
@@ -98,6 +98,7 @@ def neworder(x):
 #     "price" (number): "xxx"
 # }
 def order_updating(x):
+    uid = x["uid"]
     picture = request.files['picture']
     order_id = request.form['order_id']
     title = request.form['title']
@@ -105,25 +106,29 @@ def order_updating(x):
     game = request.form['game']
     resources = request.form['resources']
     price = request.form['price']
-    if bool(picture):
-        picture.save(os.path.join('./static/picture/', str(order_id) + '.jpg'))
-    if bool(title):
-        orders.query.filter(orders.id == order_id).update({"title": title})
-    if bool(description):
-        orders.query.filter(orders.id == order_id).update({"description": description})
-    if bool(game):
-        orders.query.filter(orders.id == order_id).update({"game": game})
-    if bool(resources):
-        orders.query.filter(orders.id == order_id).update({"resources": resources})
-    if bool(price):
-        try:
-            float(price)
-        except ValueError:
-            return jsonify(code=400, message="价格应为数字")
-        orders.query.filter(orders.id == order_id).update({"price": price})
-    orders.query.filter(orders.id == order_id).update({"status": "待审核"})
-    db.session.commit()
-    return jsonify(code=200, message="商品信息修改成功，请重新等待审核")
+    seller_id = orders.query.filter(orders.id == order_id).first().seller_id
+    if seller_id != uid:
+        return jsonify(code=401, message="用户无权限")
+    else:
+        if bool(picture):
+            picture.save(os.path.join('./static/picture/', str(order_id) + '.jpg'))
+        if bool(title):
+            orders.query.filter(orders.id == order_id).update({"title": title})
+        if bool(description):
+            orders.query.filter(orders.id == order_id).update({"description": description})
+        if bool(game):
+            orders.query.filter(orders.id == order_id).update({"game": game})
+        if bool(resources):
+            orders.query.filter(orders.id == order_id).update({"resources": resources})
+        if bool(price):
+            try:
+                float(price)
+            except ValueError:
+                return jsonify(code=400, message="价格应为数字")
+            orders.query.filter(orders.id == order_id).update({"price": price})
+        orders.query.filter(orders.id == order_id).update({"status": "待审核"})
+        db.session.commit()
+        return jsonify(code=200, message="商品信息修改成功，请重新等待审核")
 
 
 @view.route('/order/view', methods=['GET', 'OPTIONS'])
@@ -206,7 +211,7 @@ def order_verifying(x):
 
 
 @view.route('/order/searching', methods=['GET', 'OPTIONS'])
-# 地址传参/order/view/verifying?keyword=xxx&page=xxx
+# 地址传参/order/searching?keyword=xxx&page=xxx
 def order_searching():
     all_data = []
     keyword = request.args.get("keyword")
@@ -259,10 +264,10 @@ def order_information():
 # }
 def order_bidding(x):
     uid = x["uid"]
-    buyer_name = x["username"]
     order_id = request.get_json().get("order_id")
     price = request.get_json().get("price")
     message = request.get_json().get("message")
+    buyer_name = users.query.filter(users.id == uid).first().name
     title = orders.query.filter(orders.id == order_id).first().title
     seller_id = orders.query.filter(orders.id == order_id).first().seller_id
     time_now = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
@@ -287,9 +292,8 @@ def order_bidding(x):
 
 
 @view.route('/bid/searching', methods=['GET', 'OPTIONS'])
-@token().check_token("1")
 # 地址传参/bid/searching?order_id=xxx&page=xxx
-def bid_searching(x):
+def bid_searching():
     all_data = []
     order_id = int(request.args.get("order_id"))
     page = int(request.args.get("page"))
@@ -451,12 +455,10 @@ def order_canceling(x):
 
 @view.route('/order/deleting', methods=['DELETE', 'OPTIONS'])
 @token().check_token("1")
-# {
-#     "order_id": xxx
-# }
+# 地址传参/order/deleting?order_id=xxx
 def order_deleting(x):
     uid = x["uid"]
-    order_id = request.get_json().get("order_id")
+    order_id = int(request.args.get("order_id"))
     Order = orders.query.filter(orders.id == order_id)
     order_seller_id = Order.first().seller_id
     if uid == order_seller_id:

@@ -485,3 +485,693 @@ Traceback (most recent call last):
   File "C:\Users\UltAshes\Desktop\youxi-main2\app\main\utils.py", line 19, in jpg
     return "https://7f1192d863.imdo.co" + x
 TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:28:53,952 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:28:57,798 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:29:58,041 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:30:11,234 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:32:13,359 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:32:23,142 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:32:25,175 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 104, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:34:10,018 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 105, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:34:10,909 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 105, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:34:36,715 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 105, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:34:38,979 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 105, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:34:40,365 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 105, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:34:42,110 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 105, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:34:46,070 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 105, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:34:57,865 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 105, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:36:06,489 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 105, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:36:41,198 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 105, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:36:50,028 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 105, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:38:09,239 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 105, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:38:16,731 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 105, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:38:20,518 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 105, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:39:29,475 - app - ERROR - Exception on /information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 105, in information
+    photo=jpg(search.photo))
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 19, in jpg
+    return "https://7f1192d863.imdo.co" + x
+TypeError: can only concatenate str (not "NoneType") to str
+2023-06-16 15:52:31,548 - app - ERROR - Exception on /bid/searching [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: bid_searching() missing 1 required positional argument: 'x'
+2023-06-16 15:52:36,014 - app - ERROR - Exception on /bid/searching [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: bid_searching() missing 1 required positional argument: 'x'
+2023-06-16 15:52:36,907 - app - ERROR - Exception on /bid/searching [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: bid_searching() missing 1 required positional argument: 'x'
+2023-06-16 15:52:38,139 - app - ERROR - Exception on /bid/searching [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: bid_searching() missing 1 required positional argument: 'x'
+2023-06-16 15:52:45,674 - app - ERROR - Exception on /bid/searching [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: bid_searching() missing 1 required positional argument: 'x'
+2023-06-16 15:52:46,809 - app - ERROR - Exception on /bid/searching [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: bid_searching() missing 1 required positional argument: 'x'
+2023-06-16 15:52:49,874 - app - ERROR - Exception on /bid/searching [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: bid_searching() missing 1 required positional argument: 'x'
+2023-06-16 15:53:02,940 - app - ERROR - Exception on /bid/searching [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: bid_searching() missing 1 required positional argument: 'x'
+2023-06-16 15:53:15,551 - app - ERROR - Exception on /bid/searching [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: bid_searching() missing 1 required positional argument: 'x'
+2023-06-16 15:55:07,900 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: user_information() missing 1 required positional argument: 'x'
+2023-06-16 15:55:11,425 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: user_information() missing 1 required positional argument: 'x'
+2023-06-16 15:55:14,261 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: user_information() missing 1 required positional argument: 'x'
+2023-06-16 15:55:19,353 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: user_information() missing 1 required positional argument: 'x'
+2023-06-16 15:58:27,100 - app - ERROR - Exception on /exception/100 [POST]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1900, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1265, "Data truncated for column 'status' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Users\asus\Desktop\youxi\app\main\exception.py", line 23, in exception_100
+    orders.query.filter(orders.id == order_id).update({"status": "异常1"})
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\query.py", line 3306, in update
+    result = self.session.execute(
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 1714, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1705, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1572, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1943, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2124, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\util\compat.py", line 211, in raise_
+    raise exception
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1900, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python310\lib\site-packages\pymysql\err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.DataError: (pymysql.err.DataError) (1265, "Data truncated for column 'status' at row 1")
+[SQL: UPDATE orders SET status=%(status)s WHERE orders.id = %(id_1)s]
+[parameters: {'status': '异常1', 'id_1': 12}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\exception.py", line 24, in exception_100
+    except exception:
+TypeError: catching classes that do not inherit from BaseException is not allowed
+2023-06-18 20:35:17,204 - app - ERROR - Exception on /order/deleting [DELETE]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\utils.py", line 53, in decorate
+    return func(dict(username=username, uid=uid, access=access))
+  File "D:\Users\asus\Desktop\youxi\app\main\view.py", line 461, in order_deleting
+    order_id = int(request.args.get("order_id"))
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'

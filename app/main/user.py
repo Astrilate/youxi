@@ -31,7 +31,8 @@ def register():
         return jsonify(code=400, message="用户名已存在")
     else:
         a = users(username=get_json.get('username'),
-                  password=get_json.get('password'))
+                  password=get_json.get('password'),
+                  name=get_json.get('username'))
         db.session.add(a)
         db.session.commit()
         return jsonify(code=200, message="注册成功")
@@ -166,9 +167,8 @@ def email_code(x):
 
 
 @user.route('/user/information', methods=['GET', 'OPTIONS'])
-@token().check_token("1")
 # 地址传参/user/information?id=xxx
-def user_information(x):
+def user_information():
     all_data = []
     idata = {}
     user_id = int(request.args.get("id"))

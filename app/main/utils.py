@@ -15,8 +15,10 @@ ALGORITHM = "HS256"
 
 
 def jpg(x):
-    # return "http://127.0.0.1:5000" + x
-    return "https://7f1192d863.imdo.co" + x
+    if x is not None:
+        return "https://7f1192d863.imdo.co" + x
+    else:
+        return ""
 
 
 class token:
