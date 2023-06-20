@@ -5,7 +5,7 @@ from urllib.parse import urlparse
 
 import websockets.exceptions
 
-from app.chat.chat import send_private_message, create_private_message, my_send, handle_message, make_message
+from app.chat.chat import send_private_message, create_private_conversation, my_send, handle_message, make_message
 from app.chat.chatconfig import connections, SERVER_PORT
 from app.chat.connection import handle_new_connection, handle_connection_closed, handle_connection
 
@@ -37,7 +37,7 @@ async def start_server():
         path = client_websocket.path
         # 根据路径调用相应的处理函数
         try:
-            if path == "/chat.py/send":
+            if path == "/chat/send":
                 # 获取 WebSocket 连接的请求对象
                 request = client_websocket.request
                 # 解析客户端的请求参数（地址传参
@@ -48,17 +48,17 @@ async def start_server():
                 # 解析客户端的请求参数（JSON 传参）
                 query_string = request.query_string.decode('utf-8')
                 query_message = json.loads(query_string)
-                message = query_message.get('content', '')
+                message = query_message.get('message', '')
                 await send_private_message(chat_connection_id, send_id, message)
-            elif path == "/chat.py/create":
+            elif path == "/chat/create":
                 # 获取 WebSocket 连接的请求对象
                 request = client_websocket.request
                 # 解析客户端的请求参数（地址传参
                 query_params = urllib.parse.parse_qs(request.path)
                 my_id = query_params.get('my_id', [''])[0]
                 friend_id = query_params.get('friend_id', [''])[0]
-                await create_private_message(my_id, friend_id)
-            elif path == "/chat.py/system":
+                await create_private_conversation(my_id, friend_id)
+            '''elif path == "/chat/system":
                 # 获取 WebSocket 连接的请求对象
                 request = client_websocket.request
                 # 解析客户端的请求参数（地址传参
@@ -69,18 +69,19 @@ async def start_server():
                 query_message = json.loads(query_string)
                 message = query_message.get('content', '')
                 chat_id = query_params.get('chat_id', [''])[0]
-                await my_send(chat_id, message)
+                await my_send(chat_id, message)'''
             # await keep_handle_message(client_websocket)
-            # elif path == "/chat.py/delete":
+            # elif path == "/chat/delete":
             # await handle_delete_message(client_websocket, client_websocket.path)
             # elif path == "/notification":
             # await show_notification()
+        # 键错误
         except KeyError as e:
             error = f"Error: {str(e)}"
             print(error)
             # error_message = make_message(send_id, 1, 2, error, datetime.datetime.now().timestamp())
             # await my_send(send_id, error_message)
-
+        # 地址错误
         except Exception as e:
             error = f"Path error: {str(e)}"
             print(error)
