@@ -18,6 +18,24 @@ async def my_send(chat_id, message):
             await client.send(json.dumps(message))
 
 
+# 创建格式化消息
+def make_message(chat_id, sender_type, msg_type, content, time):
+    f_message = {
+        "chatId": chat_id,  # 对象id
+        "senderType": sender_type,  # 0对方，1自己，2系统
+        "msgType": msg_type,  # 0文本，1图片，2json
+        "content": content,
+        "time": time
+    }
+    return f_message
+
+
+def accident_message(chat_id, msg_type, content):
+    time = datetime.datetime.now().timestamp()
+    acd_message = make_message(chat_id, 2, msg_type, content, time)
+    my_send(chat_id, acd_message)
+
+
 # 处理收到的消息
 # async def handle_message(message, client_id):
 async def handle_message(message, client_id):
@@ -25,10 +43,15 @@ async def handle_message(message, client_id):
     # 解析收到的消息
     try:
         data = json.loads(message)
-        chat_id = data["chatId"]  # 对象id
-        sender_type = data["senderType"]  # 0对方，1自己，2系统
-        msg_type = data["msgType"]  # 0文本，1图片，2json
+
+        chat_id = data["chatId"]
+        # 对象id
+        sender_type = data["senderType"]
+        # 0对方，1自己，2系统
+        msg_type = data["msgType"]
+        # 0文本，1图片，2json
         content = data["content"]
+
         time = data["time"]
     except json.JSONDecodeError:
         # 消息解析错误，返回错误信息给指定的客户端
@@ -38,7 +61,7 @@ async def handle_message(message, client_id):
         await my_send(client_id, json.dumps(error_message))
         return
     except KeyError as e:
-        # 缺少必要的键错误，返回错误信息给指定的客户端
+        # 键错误
         error_message = {
             "error": f"Missing key: {str(e)}"
         }
@@ -111,10 +134,14 @@ async def handle_message(message, client_id):
 
 # 创建私聊消息
 # def create_private_message(message_id, sender, recipient, content):
-def create_private_message(my_id, friend_id):
+def create_private_conversation(my_id, friend_id):
     timestamp = datetime.datetime.now().timestamp()
-    dict_name = f"connection{timestamp}"
+    conversation_id = float(timestamp)+float(my_id)
+    dict_name = f"connection{conversation_id}"
     private_chats[dict_name] = {"my_id": my_id, "friend_id": friend_id}
+    conversation_information = {"conversation_id":conversation_id,"my_id":my_id,"friend_id":friend_id}
+    await my_send(my_id, conversation_information)
+    await my_send(friend_id, conversation_information)
 
 
 # 发送私聊消息
@@ -137,26 +164,15 @@ async def send_private_message(send_id, chat_connection_id, message):
         # 发送私聊消息给发送者
         sender_websocket = sender
         await sender_websocket.send(json.dumps(message))
-
+    # 键错误
     except KeyError as e:
         error = f"Error: {str(e)}"
         print(error)
         error_message = make_message(send_id, 1, 2, error, datetime.datetime.now().timestamp())
         await my_send(send_id, error_message)
-
+    # 连接错误
     except Exception as e:
         error = f"Error occurred while sending private message: {str(e)}"
         print(error)
         error_message = make_message(send_id, 1, 2, error, datetime.datetime.now().timestamp())
         await my_send(send_id, error_message)
-
-
-def make_message(chat_id, sender_type, msg_type, content, time):
-    f_message = {
-        "chatId": chat_id,  # 对象id
-        "senderType": sender_type,  # 0对方，1自己，2系统
-        "msgType": msg_type,  # 0文本，1图片，2json
-        "content": content,
-        "time": time
-    }
-    return f_message
