@@ -1625,3 +1625,18 @@ Traceback (most recent call last):
   File "D:\Users\asus\Desktop\youxi\app\main\exception.py", line 44, in exception_110
     seller_id = orders.query.filter(orders.id == orders_id).first().seller_id
 AttributeError: 'NoneType' object has no attribute 'buyer_id'
+2023-07-06 11:38:57,215 - app - ERROR - Exception on /exception/110 [POST]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\exception.py", line 44, in exception_110
+    seller_id = orders.query.filter(orders.id == orders_id).first().seller_id
+AttributeError: 'NoneType' object has no attribute 'buyer_id'
