@@ -30,52 +30,10 @@ def test_1(client, data, message):
     print(r)
     assert r.json.get("message") == message
 
+
+
 #
 # class Test_login:
-#     def test_code(self):
-#         r = requests.get(url + "/code")
-#         assert r.json()["image"] == "https://7f1192d863.imdo.co/static/code.jpg"
-#
-#     def test_login(self):
-#         login_params = {
-#             "username": "asdasd",
-#             "password": "5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8",
-#             "code": str(redis_store.get("code"))
-#         }
-#         r = requests.post(url + "/login", data=json.dumps(login_params), headers=post_headers)
-#         assert r.json()["code"] == 200
-#         assert r.json()["message"] == "登录成功"
-#
-#     def test_login1(self):
-#         login_params = {
-#             "username": "",
-#             "password": "5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8",
-#             "code": str(redis_store.get("code"))
-#         }
-#         r = requests.post(url + "/login", data=json.dumps(login_params), headers=post_headers)
-#         assert r.json()["code"] == 400
-#         assert r.json()["message"] == "用户名不存在"
-#
-#     def test_login2(self):
-#         login_params = {
-#             "username": "asdasd",
-#             "password": "5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8",
-#             "code": ""
-#         }
-#         r = requests.post(url + "/login", data=json.dumps(login_params), headers=post_headers)
-#         assert r.json()["code"] == 400
-#         assert r.json()["message"] == "验证码错误"
-#
-#     def test_login3(self):
-#         login_params = {
-#             "username": "asdasd",
-#             "password": "",
-#             "code": str(redis_store.get("code"))
-#         }
-#         r = requests.post(url + "/login", data=json.dumps(login_params), headers=post_headers)
-#         assert r.json()["code"] == 400
-#         assert r.json()["message"] == "密码错误"
-#
 #     def test_register(self):
 #         register_params = {
 #             "username": "asdasd",

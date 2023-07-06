@@ -1175,3 +1175,453 @@ Traceback (most recent call last):
   File "D:\Users\asus\Desktop\youxi\app\main\view.py", line 461, in order_deleting
     order_id = int(request.args.get("order_id"))
 TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2023-06-18 21:58:38,214 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-06-18 21:59:35,383 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-06-18 22:00:25,709 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-06-18 22:00:38,263 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-06-18 22:01:39,532 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-06-18 22:01:42,566 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-06-18 22:24:21,365 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-06-18 22:24:44,782 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-06-18 22:30:08,037 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-06-18 22:30:15,524 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-06-18 22:30:18,741 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-06-18 22:30:21,535 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-06-18 22:30:26,601 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-06-18 22:30:28,364 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-06-18 22:30:29,777 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-07-03 09:57:18,495 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-07-03 12:49:54,341 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-07-03 12:50:04,601 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-07-03 12:50:05,259 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-07-03 12:50:06,391 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-07-03 13:00:34,151 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-07-03 13:19:24,374 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-07-03 13:19:26,169 - app - ERROR - Exception on /user/information [GET]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\user.py", line 175, in user_information
+    name = users.query.filter(users.id == user_id).first().username
+AttributeError: 'NoneType' object has no attribute 'username'
+2023-07-06 11:24:18,774 - app - ERROR - Exception on /exception/110 [POST]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\exception.py", line 43, in exception_110
+    seller_id = orders.query.filter(orders.id == orders_id).first().seller_id
+AttributeError: 'NoneType' object has no attribute 'seller_id'
+2023-07-06 11:27:44,280 - app - ERROR - Exception on /exception/110 [POST]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\exception.py", line 43, in exception_110
+    seller_id = orders.query.filter(orders.id == orders_id).first().seller_id
+AttributeError: 'NoneType' object has no attribute 'seller_id'
+2023-07-06 11:27:57,972 - app - ERROR - Exception on /exception/110 [POST]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\exception.py", line 43, in exception_110
+    seller_id = orders.query.filter(orders.id == orders_id).first().seller_id
+AttributeError: 'NoneType' object has no attribute 'seller_id'
+2023-07-06 11:33:38,773 - app - ERROR - Exception on /exception/110 [POST]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\exception.py", line 44, in exception_110
+    buyer_id = bids.query.filter(bids.order_id == orders_id).first().buyer_id
+AttributeError: 'NoneType' object has no attribute 'buyer_id'
+2023-07-06 11:34:18,148 - app - ERROR - Exception on /exception/110 [POST]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\exception.py", line 44, in exception_110
+    buyer_id = bids.query.filter(bids.order_id == orders_id).first().buyer_id
+AttributeError: 'NoneType' object has no attribute 'buyer_id'
+2023-07-06 11:37:37,211 - app - ERROR - Exception on /exception/110 [POST]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\exception.py", line 44, in exception_110
+    seller_id = orders.query.filter(orders.id == orders_id).first().seller_id
+AttributeError: 'NoneType' object has no attribute 'buyer_id'
+2023-07-06 11:37:59,322 - app - ERROR - Exception on /exception/110 [POST]
+Traceback (most recent call last):
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Users\asus\Desktop\youxi\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asus\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Users\asus\Desktop\youxi\app\main\exception.py", line 44, in exception_110
+    seller_id = orders.query.filter(orders.id == orders_id).first().seller_id
+AttributeError: 'NoneType' object has no attribute 'buyer_id'
