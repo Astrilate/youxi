@@ -79,18 +79,17 @@ def login():
 @user.route('/temp/login', methods=['POST', 'OPTIONS'])
 def temp_login():
     token = request.headers.get("Authorization")
+    app.logger.info(token)
     try:
         payload = jwt.decode(token, SECRET_KEY, ALGORITHM)
         access = payload.get("access")
         username = payload.get("sub")
         uid = payload.get("uid")
-        return jsonify(code=200,data=dict(id=uid, type=access, token=token, username=username))
+        return jsonify(code=200, data=dict(id=uid, type=access, token=token, username=username), message="success")
     except jwt.DecodeError:
         return jsonify(code=401, message="token无权限")
     except jwt.ExpiredSignatureError:
         return jsonify(code=401, message="token已过期")
-    except jwt.PyJWTError:
-        return jsonify(code=401, message="无法检验token")
 
 
 @user.route('/information', methods=['GET', 'OPTIONS'])
@@ -135,10 +134,12 @@ def updating_inform(x):
     if bool(real_name):
         users.query.filter(users.id == uid).update({"real_name": real_name})
     if bool(email):
+        app.logger.info(email + '-' + str(ecode))
         if bool(ecode):
             if str(uid) + email + ecode == redis_store.get("check_email"):
                 users.query.filter(users.id == uid).update({"email": email})
             else:
+                app.logger.info(str(uid) + email + ecode + "       " + redis_store.get("check_email"))
                 return jsonify(code=400, message="邮箱地址或验证码有误")
         else:
             return jsonify(code=400, message="未输入邮箱验证码")
@@ -157,13 +158,15 @@ def email_code(x):
     if not re.match(r'^[0-9a-zA-Z_]{0,19}@[0-9a-zA-Z]{1,13}.com', email):
         return jsonify(code=400, message="邮箱格式有误")
     ecode = e_mail().create_code().lower()
+    redis_store.set("ecode", ecode, 300)
     redis_store.set("check_email", str(uid) + email + ecode, 300)
+    app.logger.info(email + '-' + str(ecode))
     print("邮箱验证码:", ecode)
     try:
         e_mail().send_email(email, ecode)
         return jsonify(code=200, message="发送成功")
     except:
-        return jsonify(message="发送失败")
+        return jsonify(essage="发送失败")
 
 
 @user.route('/user/information', methods=['GET', 'OPTIONS'])

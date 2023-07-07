@@ -29,7 +29,7 @@ class token:
             "sub": username,
             "uid": uid,
             "access": access,
-            "exp": expire
+            # "exp": expire
         }
         access_token = jwt.encode(payload, SECRET_KEY, ALGORITHM)
         return access_token
@@ -57,8 +57,6 @@ class token:
                     return jsonify(code=401, message="token无权限")
                 except jwt.ExpiredSignatureError:
                     return jsonify(code=401, message="token已过期")
-                except jwt.PyJWTError:
-                    return jsonify(code=401, message="无法检验token")
             decorate.__name__ = func.__name__
             return decorate
         wrapper.__name__ = para

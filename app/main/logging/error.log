@@ -1640,3 +1640,29 @@ Traceback (most recent call last):
   File "D:\Users\asus\Desktop\youxi\app\main\exception.py", line 44, in exception_110
     seller_id = orders.query.filter(orders.id == orders_id).first().seller_id
 AttributeError: 'NoneType' object has no attribute 'buyer_id'
+2023-07-08 00:13:27,498 - app - ERROR - this is an error
+2023-07-08 00:15:24,936 - app - ERROR - this is an error
+2023-07-08 00:24:15,986 - app - ERROR - this is an error
+2023-07-08 00:34:38,997 - app - ERROR - this is an error
+2023-07-08 00:34:55,626 - app - ERROR - this is an error
+2023-07-08 00:50:02,927 - app - ERROR - this is an error
+2023-07-08 00:51:08,977 - app - ERROR - this is an error
+2023-07-08 00:56:54,511 - app - ERROR - this is an error
+2023-07-08 01:01:34,438 - app - ERROR - this is an error
+2023-07-08 01:02:40,583 - app - ERROR - this is an error
+2023-07-08 01:07:42,130 - app - ERROR - this is an error
+2023-07-08 01:20:21,362 - app - ERROR - this is an error
+2023-07-08 01:20:42,827 - app - ERROR - this is an error
+2023-07-08 01:23:04,284 - app - ERROR - this is an error
+2023-07-08 01:24:29,137 - app - ERROR - this is an error
+2023-07-08 01:30:32,727 - app - ERROR - this is an error
+2023-07-08 01:31:03,534 - app - ERROR - this is an error
+2023-07-08 01:31:14,964 - app - ERROR - this is an error
+2023-07-08 01:34:25,374 - app - ERROR - this is an error
+2023-07-08 01:40:51,178 - app - ERROR - this is an error
+2023-07-08 01:42:23,016 - app - ERROR - this is an error
+2023-07-08 01:43:56,365 - app - ERROR - this is an error
+2023-07-08 01:44:12,137 - app - ERROR - this is an error
+2023-07-08 01:46:02,400 - app - ERROR - this is an error
+2023-07-08 01:47:57,835 - app - ERROR - this is an error
+2023-07-08 01:48:24,717 - app - ERROR - this is an error

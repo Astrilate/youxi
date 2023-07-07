@@ -107,6 +107,7 @@ def order_updating(x):
     resources = request.form['resources']
     price = request.form['price']
     seller_id = orders.query.filter(orders.id == order_id).first().seller_id
+    app.logger.info("price----------" + price)
     if seller_id != uid:
         return jsonify(code=401, message="用户无权限")
     else:
@@ -196,13 +197,13 @@ def order_verifying(x):
             db.session.add(a)
         else:
             if status == "待审核":
+                Order.update({"status": "已结束"})
                 a = messages(user_id=seller_id, time=time_now,
-                             message=f"您标题为[{Order.first().title}]的商品未通过审核，已被删除")
+                             message=f"您标题为[{Order.first().title}]的商品未通过审核")
                 db.session.add(a)
-                Order.delete()
             else:
                 a = messages(user_id=seller_id, time=time_now,
-                             message=f"您标题为[{Order.first().title}]的商品未通过重审，请认真确认账户资源信息")
+                             message=f"您标题为[{Order.first().title}]的商品未通过重审，请重新认真确认账户资源信息")
                 db.session.add(a)
         db.session.commit()
         return jsonify(code=200, message="success")
@@ -565,13 +566,3 @@ def order_view_mine(x):
                          picture=jpg(each.picture))
         all_data.append(each_data)
     return jsonify(code=200, message="success", data=all_data)
-
-
-@view.route('/', methods=['GET', 'OPTIONS'])
-@token().check_token
-# {
-#
-#
-# }
-def order(x):
-    pass
