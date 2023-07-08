@@ -48,6 +48,7 @@ def register():
 #     "password": "asdasd",
 #     "code": "abcd"
 # }
+# 用户登录接口
 def login():
     idata = {}
     get_json = request.get_json()
@@ -78,6 +79,7 @@ def login():
 
 
 @user.route('/temp/login', methods=['POST', 'OPTIONS'])
+# token登录接口
 def temp_login():
     token = request.headers.get("Authorization")
     app.logger.info("/temp/login   " + token)
@@ -97,6 +99,7 @@ def temp_login():
 
 @user.route('/information', methods=['GET', 'OPTIONS'])
 @token().check_token("0")
+# 用户个人信息查询
 def information(x):
     app.logger.info("/information   " + str(x["uid"]))
     all_data = []
@@ -121,6 +124,7 @@ def information(x):
 #     "email" (string): "xxx",
 #     "ecode" (string): "xxx"
 # }
+# 用户个人信息修改
 def updating_inform(x):
     uid = x["uid"]
     try:
@@ -160,6 +164,7 @@ def updating_inform(x):
 # {
 #     "email": "xxxxxxxxxx@xxx.com"
 # }
+# 用户邮箱验证码发送
 def email_code(x):
     uid = x["uid"]
     email = request.get_json().get('email')
@@ -182,6 +187,7 @@ def email_code(x):
 
 @user.route('/user/information', methods=['GET', 'OPTIONS'])
 # 地址传参/user/information?id=xxx
+# 其他用户信息显示
 def user_information():
     all_data = []
     idata = {}
@@ -205,6 +211,7 @@ def user_information():
 #     "money": xxx,
 #     "operation": "in/out"
 # }
+# 用户余额显示或者充值提现
 def money(x):
     uid = x["uid"]
     User = users.query.filter(users.id == uid)
@@ -268,6 +275,7 @@ def money(x):
 #     "suspected_id": xxx,
 #     "message": xxx
 # }
+# 用户对用户的举报
 def reporting(x):
     uid = x["uid"]
     suspected_id = request.get_json().get("suspected_id")
@@ -298,6 +306,7 @@ def reporting(x):
 @user.route('/report/view/verifying', methods=['GET', 'OPTIONS'])
 @token().check_token("1")
 # 地址传参/report/view/verifying?page=xxx
+# 管理员查看用户举报记录预览
 def report_view_verifying(x):
     access = x['access']
     app.logger.info("/report/view/verifying   " + str(x["uid"]) + "--" + access)
@@ -324,6 +333,7 @@ def report_view_verifying(x):
 #     "report_id": xxx,
 #     "verifying": True/False
 # }
+# 管理员审核举报
 def report_verifying(x):
     access = x['access']
     app.logger.info("/report/verifying   " + str(x["uid"]) + "--" + access)

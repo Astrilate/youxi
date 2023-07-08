@@ -24,6 +24,7 @@ def hello():
 
 
 @view.route('/code', methods=['GET', 'OPTIONS'])
+# 获取验证码图案
 def code():
     a, b = ImageCode().draw_verify_code()
     a = a.resize((80, 40))
@@ -58,6 +59,7 @@ def home():
 #     "resources" (string): "xxx",
 #     "price" (number): "xxx"
 # }
+# 用户提交新商品
 def neworder(x):
     uid = x["uid"]
     picture = request.files['picture']
@@ -103,6 +105,7 @@ def neworder(x):
 #     "resources" (string): "xxx",
 #     "price" (number): "xxx"
 # }
+# 商品信息更新
 def order_updating(x):
     uid = x["uid"]
     picture = request.files['picture']
@@ -144,6 +147,7 @@ def order_updating(x):
 
 @view.route('/order/view', methods=['GET', 'OPTIONS'])
 # 地址传参/order/view?page=xxx
+# 商品预览图
 def order_view():
     all_data = []
     page = int(request.args.get("page"))
@@ -162,6 +166,7 @@ def order_view():
 @view.route('/order/view/verifying', methods=['GET', 'OPTIONS'])
 @token().check_token("1")
 # 地址传参/order/view/verifying?page=xxx
+# 管理员处理待审核商品的预览
 def order_view_verifying(x):
     access = x['access']
     page = int(request.args.get("page"))
@@ -193,6 +198,7 @@ def order_view_verifying(x):
 #     "order_id": xxx
 #     "verifying": "True/False"
 # }
+# 管理员订单审核
 def order_verifying(x):
     access = x['access']
     app.logger.info("/order/verifying   " + str(x["uid"]) + "--" + access + "--" +
@@ -232,6 +238,7 @@ def order_verifying(x):
 
 @view.route('/order/searching', methods=['GET', 'OPTIONS'])
 # 地址传参/order/searching?keyword=xxx&page=xxx
+# 用户进行商品搜索
 def order_searching():
     all_data = []
     keyword = request.args.get("keyword")
@@ -261,6 +268,7 @@ def order_searching():
 
 @view.route('/order/information', methods=['GET', 'OPTIONS'])
 # 地址传参/order/information?order_id=xxx
+# 商品具体信息显示
 def order_information():
     all_data = []
     idata = {}
@@ -287,6 +295,7 @@ def order_information():
 #     "price": xxx,
 #     "message": "xxx",
 # }
+# 用户对商品进行出价
 def order_bidding(x):
     uid = x["uid"]
     order_id = request.get_json().get("order_id")
@@ -323,6 +332,7 @@ def order_bidding(x):
 
 @view.route('/bid/searching', methods=['GET', 'OPTIONS'])
 # 地址传参/bid/searching?order_id=xxx&page=xxx
+# 商品的出价搜索
 def bid_searching():
     all_data = []
     order_id = int(request.args.get("order_id"))
@@ -344,6 +354,7 @@ def bid_searching():
 # {
 #     "order_id": xxx
 # }
+# 用户对商品进行支付
 def order_paying(x):
     uid = x["uid"]
     order_id = request.get_json().get("order_id")
@@ -380,6 +391,7 @@ def order_paying(x):
 #     "order_id": xxx,
 #     "confirming": "True/False"
 # }
+# 用户确认验货
 def order_confirming(x):
     uid = x["uid"]
     order_id = request.get_json().get("order_id")
@@ -416,6 +428,7 @@ def order_confirming(x):
 #     "order_id": xxx,
 #     "delivering": "True/False"
 # }
+# 卖家确认发货
 def order_delivering(x):
     uid = x["uid"]
     order_id = request.get_json().get("order_id")
@@ -464,6 +477,7 @@ def order_delivering(x):
 # {
 #     "order_id": xxx
 # }
+# 卖家或买家取消订单
 def order_canceling(x):
     uid = x["uid"]
     order_id = request.get_json().get("order_id")
@@ -501,6 +515,7 @@ def order_canceling(x):
 @view.route('/order/deleting', methods=['DELETE', 'OPTIONS'])
 @token().check_token("1")
 # 地址传参/order/deleting?order_id=xxx
+# 卖家下架商品
 def order_deleting(x):
     uid = x["uid"]
     order_id = int(request.args.get("order_id"))
@@ -538,6 +553,7 @@ def order_deleting(x):
 @view.route('/message', methods=['GET', 'OPTIONS'])
 @token().check_token("0")
 # 地址传参/message?page=xxx
+# 用户的系统消息查询
 def message(x):
     uid = x["uid"]
     all_data = []
@@ -558,6 +574,7 @@ def message(x):
 # {
 #     "order_id": xxx
 # }
+# 用户收藏商品
 def order_collecting(x):
     uid = x["uid"]
     order_id = request.get_json().get("order_id")
@@ -585,6 +602,7 @@ def order_collecting(x):
 @view.route('/order/view/collection', methods=['GET', 'OPTIONS'])
 @token().check_token("1")
 # 地址传参/order/view/collection?page=xxx
+# 用户收藏的所有商品预览
 def order_view_collection(x):
     uid = x["uid"]
     all_data = []
@@ -604,6 +622,7 @@ def order_view_collection(x):
 @view.route('/order/view/mine', methods=['GET', 'OPTIONS'])
 @token().check_token("1")
 # 地址传参/order/view/mine?type=buying/selling&page=xxx
+# 用户买的商品或卖的商品预览
 def order_view_mine(x):
     uid = x["uid"]
     all_data = []
