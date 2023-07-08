@@ -1,11 +1,9 @@
 import pytest
-from manage import app, db
+from manage import app
 from app.config import redis_store
 
-headers = {
-    'Authorization': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhc2Rhc2QiLCJ1aWQiOjEsImFjY2VzcyI6ImFkbWluIn0.2JvH_dyg1_3dFjfz4vUpWMl-vpImrgH9yxXSPciidi4"}
-headers1 = {
-    'Authorization': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhc2QiLCJ1aWQiOjIsImFjY2VzcyI6InVzZXIifQ.APSqznKibp-818jK1at7nIeOyF6KmHPF5Df8Pt0pQgQ"}
+headers = {'Authorization': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhc2Rhc2QiLCJ1aWQiOjEsImFjY2VzcyI6ImFkbWluIn0.2JvH_dyg1_3dFjfz4vUpWMl-vpImrgH9yxXSPciidi4"}
+headers1 = {'Authorization': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhc2QiLCJ1aWQiOjIsImFjY2VzcyI6InVzZXIifQ.APSqznKibp-818jK1at7nIeOyF6KmHPF5Df8Pt0pQgQ"}
 
 
 @pytest.fixture
@@ -87,15 +85,18 @@ def test_order_view(client):
     (2, "success")
 ])
 def test_order_view_verifying(client, page, message):
-    query_string = {"page": page}
+    data = {"page": page}
     if message == "操作无权限":
-        r = client.get('/order/view/verifying', query_string=query_string, headers=headers1)
+        r = client.get('/order/view/verifying', query_string=data, headers=headers1)
     else:
-        r = client.get('/order/view/verifying', query_string=query_string, headers=headers)
+        r = client.get('/order/view/verifying', query_string=data, headers=headers)
     assert r.json.get("message") == message
 
 
 @pytest.mark.parametrize('data, message', [
+    (
+            {"verifying": "False", "order_id": 6}, "success"
+    ),
     (
             {"verifying": "True", "order_id": 6}, "success"
     ),
@@ -112,8 +113,8 @@ def test_order_verifying(client, data, message):
 
 
 def test_order_searching(client):
-    query_string = {"keyword": "原神！", "page": 1}
-    r = client.get('/order/searching', query_string=query_string)
+    data = {"keyword": "原神！", "page": 1}
+    r = client.get('/order/searching', query_string=data)
     assert r.json.get("message") == "success"
 
 
@@ -149,62 +150,134 @@ def test_order_bidding(client, data, message):
     assert r.json.get("message") == message
 
 
-@pytest.mark.parametrize('data', [
-    (
-            {"order_id": 2, "page": 1}
-    )
-])
-def test_bid_searching(client, data):
-    query_string = {"order_id": 2, "page": 1}
-    r = client.get('/bid/searching', query_string=query_string)
+def test_bid_searching(client):
+    data = {"order_id": 2, "page": 1}
+    r = client.get('/bid/searching', query_string=data)
     assert r.json.get("message") == "success"
 
 
 @pytest.mark.parametrize('data, message', [
     (
-            {"order_id": 8}, "支付成功"
+            {"order_id": 6}, "支付成功"
     ),
     (
-            {"order_id": 7}, "账户余额不足"
+            {"order_id": 10}, "支付成功"
     ),
     (
-            {"order_id": 6}, "不能购买自己的商品哦"
+            {"order_id": 11}, "支付成功"
+    ),
+    (
+            {"order_id": 9}, "账户余额不足"
+    ),
+    (
+            {"order_id": 7}, "不能购买自己的商品哦"
     )
 ])
 def test_order_paying(client, data, message):
-    r = client.put('/order/paying', json=data, headers=headers)
+    r = client.put('/order/paying', json=data, headers=headers1)
     assert r.json.get("message") == message
 
 
 @pytest.mark.parametrize('data, message', [
     (
-            {"order_id": 8, "confirming": "False"}, "success"
+            {"order_id": 6, "confirming": "False"}, "success"
     ),
     (
-            {"order_id": 8, "confirming": "True"}, "success"
+            {"order_id": 6, "confirming": "True"}, "success"
     ),
     (
-            {"order_id": 7, "confirming": "False"}, "用户无权限"
+            {"order_id": 2, "confirming": "False"}, "用户无权限"
     )
 ])
 def test_order_confirming(client, data, message):
-    r = client.put('/order/confirming', json=data, headers=headers)
+    r = client.put('/order/confirming', json=data, headers=headers1)
     assert r.json.get("message") == message
 
 
 @pytest.mark.parametrize('data, message', [
     (
-            {"order_id": 8, "delivering": "True"}, "success"
+            {"order_id": 6, "delivering": "True"}, "success"
     ),
     (
-            {"order_id": 8, "delivering": "False"}, "success"
+            {"order_id": 6, "delivering": "False"}, "success"
     ),
     (
-            {"order_id": 6, "delivering": "False"}, "用户无权限"
+            {"order_id": 7, "delivering": "False"}, "用户无权限"
     )
 ])
 def test_order_delivering(client, data, message):
-    r = client.put('/order/delivering', json=data, headers=headers1)
+    r = client.put('/order/delivering', json=data, headers=headers)
     assert r.json.get("message") == message
 
 
+@pytest.mark.parametrize('data, message', [
+    (
+            {"order_id": 10}, "success"
+    ),
+    (
+            {"order_id": 11}, "success"
+    ),
+    (
+            {"order_id": 9}, "用户无权限"
+    )
+])
+def test_order_canceling(client, data, message):
+    if data.get("order_id") == 11:
+        r = client.put('/order/canceling', json=data, headers=headers1)
+    else:
+        r = client.put('/order/canceling', json=data, headers=headers)
+    assert r.json.get("message") == message
+
+
+def test_message(client):
+    data = {"page": 1}
+    r = client.get('/message', query_string=data, headers=headers)
+    assert r.json.get("message") == "success"
+
+
+@pytest.mark.parametrize('data, message', [
+    (
+            {"order_id": 0}, "success"
+    ),
+    (
+            {"order_id": 0}, "您已收藏过此商品了"
+    )
+])
+def test_order_collecting(client, data, message):
+    data.update({"order_id": redis_store.get("delete_order_id")})
+    r = client.put('/order/collecting', json=data, headers=headers)
+    assert r.json.get("message") == message
+
+
+def test_order_view_collection(client):
+    data = {"page": 1}
+    r = client.get('/order/view/collection', query_string=data, headers=headers1)
+    assert r.json.get("message") == "success"
+
+
+@pytest.mark.parametrize('data, message', [
+    (
+            {"type": "buying", "page": 1}, "success"
+    ),
+    (
+            {"type": "selling", "page": 1}, "success"
+    )
+])
+def test_order_view_mine(client, data, message):
+    r = client.get('/order/view/mine', query_string=data, headers=headers)
+    assert r.json.get("message") == message
+
+
+@pytest.mark.parametrize('data, message', [
+    (
+            {"order_id": 0}, "success"
+    ),
+    (
+            {"order_id": 9}, "用户无权限"
+    )
+])
+def test_order_deleting(client, data, message):
+    if message == "success":
+        data.update({"order_id": redis_store.get("delete_order_id")})
+    r = client.delete('/order/deleting', query_string=data, headers=headers)
+    assert r.json.get("message") == message

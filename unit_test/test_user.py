@@ -83,11 +83,9 @@ def test_updating_inform(client, data, message):
     assert r.json.get("message") == message
 
 
-@pytest.mark.parametrize('params, message', [
-    ({"id": 1}, "success")
-])
-def test_user_information(client, params, message):
-    r = client.get('/user/information', query_string=params)
+def test_user_information(client):
+    data = {"id": 1}
+    r = client.get('/user/information', query_string=data)
     assert r.json.get("message") == "success"
 
 

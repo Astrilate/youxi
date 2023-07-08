@@ -4,8 +4,8 @@ from sqlalchemy import or_
 from sqlalchemy.exc import SQLAlchemyError
 from app import db
 from app.main import exception
-from app.main.utils import token, e_mail, jpg
-from app.model import users, orders, bids, messages
+from app.main.utils import jpg
+from app.model import users, orders
 
 CORS(exception, supports_credentials=True)
 

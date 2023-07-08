@@ -79,6 +79,7 @@ def neworder(x):
         db.session.add(a)
         db.session.commit()
         order_id = orders.query.filter(orders.seller_id == uid).filter(orders.picture == None).first().id
+        redis_store.set("delete_order_id", order_id, 60)
         orders.query.filter(orders.id == order_id).update({"picture": '/static/picture/' + str(order_id) + '.jpg'})
         picture.save(os.path.join('./static/picture/', str(order_id) + '.jpg'))
         db.session.commit()
@@ -480,6 +481,7 @@ def order_deleting(x):
                          message=f"您已下架商品[{order_title}]")
             db.session.add(c)
         bids.query.filter(bids.order_id == order_id).delete()
+        collections.query.filter(collections.order_id == order_id).delete()
         Order.delete()
         db.session.commit()
         return jsonify(code=200, message="success")

@@ -29,7 +29,7 @@ class token:
             "sub": username,
             "uid": uid,
             "access": access,
-            # "exp": expire
+            "exp": expire
         }
         access_token = jwt.encode(payload, SECRET_KEY, ALGORITHM)
         return access_token
