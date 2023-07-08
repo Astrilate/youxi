@@ -142,3 +142,245 @@
 2023-07-08 17:04:35,215 - app - INFO - /order/deleting   success
 2023-07-08 17:04:35,221 - app - INFO - /order/deleting   1--9
 2023-07-08 17:04:35,222 - app - INFO - /order/deleting   用户无权限
+2023-07-08 17:24:21,369 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-08 17:24:21,369 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-07-08 17:24:35,985 - app - INFO - /code   fdrh
+2023-07-08 17:24:36,012 - app - INFO - /login   asdasd--5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8--fdrh//fdrh
+2023-07-08 17:24:36,021 - app - INFO - /login   登录成功
+2023-07-08 17:24:36,025 - app - INFO - /login   --5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8--fdrh//fdrh
+2023-07-08 17:24:36,027 - app - ERROR - /login   用户名不存在
+2023-07-08 17:24:36,031 - app - INFO - /login   asdasd----fdrh//fdrh
+2023-07-08 17:24:36,032 - app - ERROR - /login   密码错误
+2023-07-08 17:24:36,035 - app - INFO - /login   asdasd--5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8--//fdrh
+2023-07-08 17:24:36,037 - app - ERROR - /login   验证码错误
+2023-07-08 17:24:36,040 - app - INFO - /register   84229881--5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8
+2023-07-08 17:24:36,045 - app - INFO - /register   注册成功
+2023-07-08 17:24:36,048 - app - INFO - /register   asdasd--5fd924625f6ab16a19cc9807c7c506ae1813490e4ba675f843d5a10e0baacdb8
+2023-07-08 17:24:36,050 - app - ERROR - /register   用户名已存在
+2023-07-08 17:24:36,053 - app - INFO - /temp/login   None
+2023-07-08 17:24:36,054 - app - ERROR - /temp/login   token无权限
+2023-07-08 17:24:36,057 - app - INFO - /temp/login   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhc2Rhc2QiLCJ1aWQiOjEsImFjY2VzcyI6ImFkbWluIiwiZXhwIjoxNjgwMzY4OTgwfQ.ynp_FXaOskEdf15X8374V7FZsjqL0A77dDfNtbg59To
+2023-07-08 17:24:36,057 - app - ERROR - /temp/login   token已过期
+2023-07-08 17:24:36,059 - app - INFO - /temp/login   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhc2Rhc2QiLCJ1aWQiOjEsImFjY2VzcyI6ImFkbWluIn0.2JvH_dyg1_3dFjfz4vUpWMl-vpImrgH9yxXSPciidi4
+2023-07-08 17:24:36,064 - app - INFO - /information   1
+2023-07-08 17:24:36,066 - app - INFO - /information   查询成功
+2023-07-08 17:24:36,071 - app - INFO - /email   1348330522@qq.com
+2023-07-08 17:24:36,072 - app - INFO - /email   11348330522@qq.comwxwgvo
+2023-07-08 17:24:38,090 - app - INFO - /email   发送成功
+2023-07-08 17:24:38,097 - app - INFO - /email   xxxxxxxxxx
+2023-07-08 17:24:38,097 - app - ERROR - /email   邮箱格式有误
+2023-07-08 17:24:38,104 - app - INFO - /information/updating   1--lihua--xiaoming--1348330522@qq.com--wxwgvo//11348330522@qq.comwxwgvo
+2023-07-08 17:24:38,109 - app - INFO - /information/updating   个人信息修改成功
+2023-07-08 17:24:38,116 - app - INFO - /information/updating   1--lihua--xiaoming--xxxxxxxxx--//11348330522@qq.comwxwgvo
+2023-07-08 17:24:38,117 - app - ERROR - /information/updating   未输入邮箱验证码
+2023-07-08 17:24:38,122 - app - INFO - /information/updating   1--lihua--xiaoming--xxxxxxxx--xxxxxx//11348330522@qq.comwxwgvo
+2023-07-08 17:24:38,124 - app - ERROR - /information/updating   邮箱地址或验证码有误
+2023-07-08 17:24:38,128 - app - INFO - /user/information   1
+2023-07-08 17:24:38,133 - app - INFO - /user/information   success
+2023-07-08 17:24:38,137 - app - INFO - /money   1--100--in
+2023-07-08 17:24:38,292 - app - INFO - /money   1--50--out
+2023-07-08 17:24:38,295 - app - INFO - /money   success
+2023-07-08 17:24:38,300 - app - INFO - /money   1--6387.76
+2023-07-08 17:24:38,300 - app - INFO - /money   success
+2023-07-08 17:24:38,304 - app - INFO - /reporting   1--3--举报信息
+2023-07-08 17:24:38,306 - app - ERROR - /reporting   您已举报过该用户
+2023-07-08 17:24:38,311 - app - INFO - /reporting   1--1--举报信息
+2023-07-08 17:24:38,316 - app - INFO - /reporting   success
+2023-07-08 17:24:38,323 - app - INFO - /report/view/verifying   1--admin
+2023-07-08 17:24:38,325 - app - INFO - /report/view/verifying   success
+2023-07-08 17:24:38,330 - app - INFO - /report/view/verifying   2--user
+2023-07-08 17:24:38,330 - app - ERROR - /report/view/verifying   操作无权限
+2023-07-08 17:24:38,335 - app - INFO - /report/verifying   1--admin
+2023-07-08 17:24:38,335 - app - INFO - /report/verifying   1--True
+2023-07-08 17:24:38,342 - app - INFO - /report/verifying   success
+2023-07-08 17:24:38,347 - app - INFO - /report/verifying   1--admin
+2023-07-08 17:24:38,347 - app - INFO - /report/verifying   1--False
+2023-07-08 17:24:38,353 - app - INFO - /report/verifying   success
+2023-07-08 17:24:38,357 - app - INFO - /report/verifying   2--user
+2023-07-08 17:24:38,357 - app - ERROR - /report/verifying   操作无权限
+2023-07-08 17:24:38,361 - app - INFO - /   this is an info
+2023-07-08 17:24:38,361 - app - ERROR - /   this is an error
+2023-07-08 17:24:38,366 - app - INFO - /home   success
+2023-07-08 17:24:38,399 - app - INFO - /neworder   1--xxx--xxx--原神！--xxx--1.14514
+2023-07-08 17:24:38,407 - app - INFO - /neworder   提交成功，请等待审核
+2023-07-08 17:24:38,414 - app - INFO - /neworder   1----xxx--原神！--xxx--1.14514
+2023-07-08 17:24:38,415 - app - ERROR - /neworder   请补充完整商品信息
+2023-07-08 17:24:38,422 - app - INFO - /neworder   1--xxx--xxx--原神！--xxx--xxx
+2023-07-08 17:24:38,422 - app - ERROR - /neworder   价格应为数字
+2023-07-08 17:24:38,430 - app - INFO - /order/updating   1--6--------zzz--
+2023-07-08 17:24:38,435 - app - INFO - /order/updating   商品信息修改成功，请重新等待审核
+2023-07-08 17:24:38,442 - app - INFO - /order/updating   2--6--------zzz--
+2023-07-08 17:24:38,443 - app - ERROR - /order/updating   用户无权限
+2023-07-08 17:24:38,450 - app - INFO - /order/updating   1--6----------zzz
+2023-07-08 17:24:38,451 - app - ERROR - /order/updating   价格应为数字
+2023-07-08 17:24:38,454 - app - INFO - /order/view   1
+2023-07-08 17:24:38,457 - app - ERROR - /order/view   success
+2023-07-08 17:24:38,462 - app - INFO - /order/view/verifying   2--user--1
+2023-07-08 17:24:38,462 - app - INFO - /order/view/verifying   操作无权限
+2023-07-08 17:24:38,467 - app - INFO - /order/view/verifying   1--admin--2
+2023-07-08 17:24:38,469 - app - INFO - /order/view/verifying   success
+2023-07-08 17:24:38,474 - app - INFO - /order/verifying   1--admin--6--False
+2023-07-08 17:24:38,480 - app - INFO - /order/verifying   success
+2023-07-08 17:24:38,485 - app - INFO - /order/verifying   1--admin--6--True
+2023-07-08 17:24:38,490 - app - INFO - /order/verifying   success
+2023-07-08 17:24:38,494 - app - INFO - /order/verifying   2--user--6--False
+2023-07-08 17:24:38,494 - app - ERROR - /order/verifying   操作无权限
+2023-07-08 17:24:38,498 - app - INFO - /order/searching   原神！--1
+2023-07-08 17:24:38,501 - app - INFO - /order/searching   success
+2023-07-08 17:24:38,505 - app - INFO - /order/information   2
+2023-07-08 17:24:38,507 - app - INFO - /order/information   success
+2023-07-08 17:24:38,509 - app - INFO - /temp/login   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhc2Rhc2QiLCJ1aWQiOjEsImFjY2VzcyI6ImFkbWluIn0.2JvH_dyg1_3dFjfz4vUpWMl-vpImrgH9yxXSPciidi4
+2023-07-08 17:24:38,510 - app - INFO - /order/information   xxx
+2023-07-08 17:24:38,510 - app - INFO - /home   success
+2023-07-08 17:24:38,510 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:24:38] "POST /temp/login HTTP/1.1" 200 -
+2023-07-08 17:24:38,511 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:24:38] "GET /home HTTP/1.1" 200 -
+2023-07-08 17:24:38,512 - app - ERROR - /order/information   参数错误
+2023-07-08 17:24:38,517 - app - INFO - /order/bidding   7--100--太贵了！！！
+2023-07-08 17:24:38,523 - app - INFO - /order/bidding   出价成功
+2023-07-08 17:24:38,528 - app - INFO - /order/bidding   7--xxx--太贵了！！！
+2023-07-08 17:24:38,532 - app - ERROR - /order/bidding   价格应为数字
+2023-07-08 17:24:38,537 - app - INFO - /order/bidding   7--None--太贵了！！！
+2023-07-08 17:24:38,541 - app - ERROR - /order/bidding   请填写出价
+2023-07-08 17:24:38,546 - app - INFO - /order/bidding   6--200--太贵了！！！
+2023-07-08 17:24:38,549 - app - ERROR - /order/bidding   不能给自己的商品出价哦
+2023-07-08 17:24:38,551 - app - INFO - /bid/searching   2--1
+2023-07-08 17:24:38,554 - app - INFO - /bid/searching   success
+2023-07-08 17:24:38,559 - app - INFO - /order/paying   2--6
+2023-07-08 17:24:38,567 - app - INFO - /order/paying   支付成功
+2023-07-08 17:24:38,572 - app - INFO - /order/paying   2--10
+2023-07-08 17:24:38,579 - app - INFO - /order/paying   支付成功
+2023-07-08 17:24:38,584 - app - INFO - /order/paying   2--11
+2023-07-08 17:24:38,592 - app - INFO - /order/paying   支付成功
+2023-07-08 17:24:38,597 - app - INFO - /order/paying   2--9
+2023-07-08 17:24:38,600 - app - ERROR - /order/paying   账户余额不足
+2023-07-08 17:24:38,605 - app - INFO - /order/paying   2--7
+2023-07-08 17:24:38,607 - app - ERROR - /order/paying   不能购买自己的商品哦
+2023-07-08 17:24:38,612 - app - INFO - /order/confirming   2--6--False
+2023-07-08 17:24:38,623 - app - INFO - /order/confirming   success
+2023-07-08 17:24:38,628 - app - INFO - /order/confirming   2--6--True
+2023-07-08 17:24:38,636 - app - INFO - /order/confirming   success
+2023-07-08 17:24:38,641 - app - INFO - /order/confirming   2--2--False
+2023-07-08 17:24:38,643 - app - ERROR - /order/confirming   用户无权限
+2023-07-08 17:24:38,648 - app - INFO - /order/delivering   1--6--True
+2023-07-08 17:24:38,662 - app - INFO - /order/delivering   success
+2023-07-08 17:24:38,666 - app - INFO - /order/delivering   1--6--False
+2023-07-08 17:24:38,679 - app - INFO - /order/delivering   success
+2023-07-08 17:24:38,685 - app - INFO - /order/delivering   1--7--False
+2023-07-08 17:24:38,689 - app - ERROR - /order/delivering   用户无权限
+2023-07-08 17:24:38,694 - app - INFO - /order/canceling   1--10
+2023-07-08 17:24:38,703 - app - INFO - /order/canceling   success
+2023-07-08 17:24:38,709 - app - INFO - /order/canceling   2--11
+2023-07-08 17:24:38,719 - app - INFO - /order/canceling   success
+2023-07-08 17:24:38,724 - app - INFO - /order/canceling   1--9
+2023-07-08 17:24:38,726 - app - ERROR - /order/canceling   用户无权限
+2023-07-08 17:24:38,732 - app - INFO - /message   1--1
+2023-07-08 17:24:38,734 - app - INFO - /message   success
+2023-07-08 17:24:38,739 - app - INFO - /order/collecting   1--98
+2023-07-08 17:24:38,743 - app - INFO - /order/collecting   success
+2023-07-08 17:24:38,749 - app - INFO - /order/collecting   1--98
+2023-07-08 17:24:38,751 - app - ERROR - /order/collecting   您已收藏过此商品了
+2023-07-08 17:24:38,756 - app - INFO - /order/view/collection   2--1
+2023-07-08 17:24:38,758 - app - INFO - /order/view/collection   success
+2023-07-08 17:24:38,762 - app - INFO - /order/view/mine   1--buying--1
+2023-07-08 17:24:38,764 - app - INFO - /order/view/mine   success
+2023-07-08 17:24:38,769 - app - INFO - /order/view/mine   1--selling--1
+2023-07-08 17:24:38,771 - app - INFO - /order/view/mine   success
+2023-07-08 17:24:38,776 - app - INFO - /order/deleting   1--98
+2023-07-08 17:24:38,783 - app - INFO - /order/deleting   success
+2023-07-08 17:24:38,788 - app - INFO - /order/deleting   1--9
+2023-07-08 17:24:38,789 - app - INFO - /order/deleting   用户无权限
+2023-07-08 17:24:38,924 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:24:38] "GET /static/picture/4.jpg HTTP/1.1" 200 -
+2023-07-08 17:24:41,996 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:24:41] "GET /static/picture/5.jpg HTTP/1.1" 200 -
+2023-07-08 17:24:42,096 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:24:42] "GET /static/picture/7.jpg HTTP/1.1" 200 -
+2023-07-08 17:24:44,954 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:24:44] "GET /static/picture/8.jpg HTTP/1.1" 200 -
+2023-07-08 17:25:09,433 - app - INFO - /neworder   1--s--dc--vc--s--77
+2023-07-08 17:25:09,452 - app - INFO - /neworder   提交成功，请等待审核
+2023-07-08 17:25:09,453 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:25:09] "POST /neworder HTTP/1.1" 200 -
+2023-07-08 17:25:19,332 - app - INFO - /neworder   1--s--dc--vc--s--77
+2023-07-08 17:25:19,351 - app - INFO - /neworder   提交成功，请等待审核
+2023-07-08 17:25:19,352 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:25:19] "POST /neworder HTTP/1.1" 200 -
+2023-07-08 17:25:22,259 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:25:22] "POST /neworder HTTP/1.1" 200 -
+2023-07-08 17:26:37,056 - app - INFO - /temp/login   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMTQxNDQiLCJ1aWQiOjU1LCJhY2Nlc3MiOiJ1c2VyIn0.PLCOM_iWf_pivOwyOyJbU-61DzMcgSOu3PnZaZ-KJHc
+2023-07-08 17:26:37,057 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:26:37] "POST /temp/login HTTP/1.1" 200 -
+2023-07-08 17:26:37,058 - app - INFO - /home   success
+2023-07-08 17:26:37,059 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:26:37] "GET /home HTTP/1.1" 200 -
+2023-07-08 17:26:37,671 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:26:37] "GET /static/picture/4.jpg HTTP/1.1" 200 -
+2023-07-08 17:26:41,341 - app - INFO - /temp/login   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMTQxNDQiLCJ1aWQiOjU1LCJhY2Nlc3MiOiJ1c2VyIn0.PLCOM_iWf_pivOwyOyJbU-61DzMcgSOu3PnZaZ-KJHc
+2023-07-08 17:26:41,342 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:26:41] "POST /temp/login HTTP/1.1" 200 -
+2023-07-08 17:26:43,696 - app - INFO - /temp/login   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMTQxNDQiLCJ1aWQiOjU1LCJhY2Nlc3MiOiJ1c2VyIn0.PLCOM_iWf_pivOwyOyJbU-61DzMcgSOu3PnZaZ-KJHc
+2023-07-08 17:26:43,697 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:26:43] "POST /temp/login HTTP/1.1" 200 -
+2023-07-08 17:26:54,734 - app - INFO - /temp/login   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhc2Rhc2QiLCJ1aWQiOjEsImFjY2VzcyI6ImFkbWluIn0.2JvH_dyg1_3dFjfz4vUpWMl-vpImrgH9yxXSPciidi4
+2023-07-08 17:26:54,735 - app - INFO - /home   success
+2023-07-08 17:26:54,735 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:26:54] "POST /temp/login HTTP/1.1" 200 -
+2023-07-08 17:26:54,736 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:26:54] "GET /home HTTP/1.1" 200 -
+2023-07-08 17:26:55,214 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:26:55] "GET /static/picture/4.jpg HTTP/1.1" 200 -
+2023-07-08 17:26:56,918 - app - INFO - /order/information   4
+2023-07-08 17:26:56,921 - app - INFO - /order/information   success
+2023-07-08 17:26:56,921 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:26:56] "GET /order/information?order_id=4 HTTP/1.1" 200 -
+2023-07-08 17:26:57,276 - app - INFO - /bid/searching   4--1
+2023-07-08 17:26:57,278 - app - INFO - /bid/searching   success
+2023-07-08 17:26:57,279 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:26:57] "GET /bid/searching?order_id=4&page=1 HTTP/1.1" 200 -
+2023-07-08 17:26:57,350 - app - INFO - /user/information   1
+2023-07-08 17:26:57,354 - app - INFO - /user/information   success
+2023-07-08 17:26:57,354 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:26:57] "GET /user/information?id=1 HTTP/1.1" 200 -
+2023-07-08 17:26:57,767 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:26:57] "GET /static/picture/4.jpg HTTP/1.1" 200 -
+2023-07-08 17:26:59,500 - app - INFO - /temp/login   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhc2Rhc2QiLCJ1aWQiOjEsImFjY2VzcyI6ImFkbWluIn0.2JvH_dyg1_3dFjfz4vUpWMl-vpImrgH9yxXSPciidi4
+2023-07-08 17:26:59,501 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:26:59] "POST /temp/login HTTP/1.1" 200 -
+2023-07-08 17:27:01,844 - app - INFO - /temp/login   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhc2Rhc2QiLCJ1aWQiOjEsImFjY2VzcyI6ImFkbWluIn0.2JvH_dyg1_3dFjfz4vUpWMl-vpImrgH9yxXSPciidi4
+2023-07-08 17:27:01,845 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:27:01] "POST /temp/login HTTP/1.1" 200 -
+2023-07-08 17:27:01,934 - app - INFO - /home   success
+2023-07-08 17:27:01,935 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:27:01] "GET /home HTTP/1.1" 200 -
+2023-07-08 17:27:02,322 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:27:02] "GET /static/picture/4.jpg HTTP/1.1" 200 -
+2023-07-08 17:27:03,030 - app - INFO - /information   1
+2023-07-08 17:27:03,031 - app - INFO - /information   查询成功
+2023-07-08 17:27:03,032 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:27:03] "GET /information HTTP/1.1" 200 -
+2023-07-08 17:27:03,480 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:27:03] "GET /static/photo/1.jpg HTTP/1.1" 200 -
+2023-07-08 17:27:05,466 - app - INFO - /order/searching   原神--1
+2023-07-08 17:27:05,469 - app - INFO - /order/searching   success
+2023-07-08 17:27:05,470 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:27:05] "GET /order/searching?keyword=原神&page=1 HTTP/1.1" 200 -
+2023-07-08 17:27:05,844 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:27:05] "GET /static/picture/4.jpg HTTP/1.1" 200 -
+2023-07-08 17:27:05,845 - app - INFO - /order/searching   原神--2
+2023-07-08 17:27:05,847 - app - INFO - /order/searching   success
+2023-07-08 17:27:05,848 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:27:05] "GET /order/searching?keyword=原神&page=2 HTTP/1.1" 200 -
+2023-07-08 17:27:05,872 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:27:05] "GET /static/picture/11.jpg HTTP/1.1" 200 -
+2023-07-08 17:27:05,873 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:27:05] "GET /static/picture/10.jpg HTTP/1.1" 200 -
+2023-07-08 17:27:08,172 - app - INFO - /temp/login   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhc2Rhc2QiLCJ1aWQiOjEsImFjY2VzcyI6ImFkbWluIn0.2JvH_dyg1_3dFjfz4vUpWMl-vpImrgH9yxXSPciidi4
+2023-07-08 17:27:08,173 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:27:08] "POST /temp/login HTTP/1.1" 200 -
+2023-07-08 17:34:37,051 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-07-08 17:34:37,051 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-07-08 17:34:54,939 - app - INFO - /temp/login   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhc2Rhc2QiLCJ1aWQiOjEsImFjY2VzcyI6ImFkbWluIn0.2JvH_dyg1_3dFjfz4vUpWMl-vpImrgH9yxXSPciidi4
+2023-07-08 17:34:54,945 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:34:54] "POST /temp/login HTTP/1.1" 200 -
+2023-07-08 17:34:54,946 - app - INFO - /home   success
+2023-07-08 17:34:54,946 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:34:54] "GET /home HTTP/1.1" 200 -
+2023-07-08 17:34:55,348 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:34:55] "GET /static/picture/4.jpg HTTP/1.1" 200 -
+2023-07-08 17:34:56,021 - app - INFO - /information   1
+2023-07-08 17:34:56,022 - app - INFO - /information   查询成功
+2023-07-08 17:34:56,023 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:34:56] "GET /information HTTP/1.1" 200 -
+2023-07-08 17:34:56,351 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:34:56] "GET /static/photo/1.jpg HTTP/1.1" 200 -
+2023-07-08 17:34:59,538 - app - INFO - /money   1--6387.76
+2023-07-08 17:34:59,538 - app - INFO - /money   success
+2023-07-08 17:34:59,539 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:34:59] "GET /money HTTP/1.1" 200 -
+2023-07-08 17:35:03,696 - app - INFO - /money   1--1.0--out
+2023-07-08 17:35:03,711 - app - INFO - /money   success
+2023-07-08 17:35:03,712 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:35:03] "PUT /money HTTP/1.1" 200 -
+2023-07-08 17:35:04,671 - app - INFO - /money   1--6386.76
+2023-07-08 17:35:04,671 - app - INFO - /money   success
+2023-07-08 17:35:04,672 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:35:04] "GET /money HTTP/1.1" 200 -
+2023-07-08 17:35:10,245 - app - INFO - /money   1--700.0--in
+2023-07-08 17:35:10,343 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:35:10] "PUT /money HTTP/1.1" 200 -
+2023-07-08 17:35:10,809 - app - INFO - /money   1--7086.76
+2023-07-08 17:35:10,809 - app - INFO - /money   success
+2023-07-08 17:35:10,810 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:35:10] "GET /money HTTP/1.1" 200 -
+2023-07-08 17:35:35,326 - app - INFO - /money   1--7086.76
+2023-07-08 17:35:35,327 - app - INFO - /money   success
+2023-07-08 17:35:35,327 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:35:35] "GET /money HTTP/1.1" 200 -
+2023-07-08 17:35:36,562 - app - INFO - /home   success
+2023-07-08 17:35:36,563 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:35:36] "GET /home HTTP/1.1" 200 -
+2023-07-08 17:35:36,790 - app - INFO - /temp/login   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhc2Rhc2QiLCJ1aWQiOjEsImFjY2VzcyI6ImFkbWluIn0.2JvH_dyg1_3dFjfz4vUpWMl-vpImrgH9yxXSPciidi4
+2023-07-08 17:35:36,790 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:35:36] "POST /temp/login HTTP/1.1" 200 -
+2023-07-08 17:35:36,806 - app - INFO - /information   1
+2023-07-08 17:35:36,807 - app - INFO - /information   查询成功
+2023-07-08 17:35:36,808 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:35:36] "GET /information HTTP/1.1" 200 -
+2023-07-08 17:35:37,350 - werkzeug - INFO - 127.0.0.1 - - [08/Jul/2023 17:35:37] "GET /static/photo/1.jpg HTTP/1.1" 200 -

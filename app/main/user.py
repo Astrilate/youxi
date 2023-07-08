@@ -229,8 +229,10 @@ def money(x):
             return jsonify(code=400, message="金额应为正数")
         if operation == "in":
             User.update({"money": User.first().money + money})
-            private_key = open(os.path.join(os.path.dirname(__file__), "keys/app_private_key.pem")).read()
-            public_key = open(os.path.join(os.path.dirname(__file__), "keys/alipay_public_key.pem")).read()
+            private_key = open(os.path.join(os.path.dirname(__file__),
+                                            "../../../keys/keys/app_private_key.pem")).read()
+            public_key = open(os.path.join(os.path.dirname(__file__),
+                                           "../../../keys/keys/alipay_public_key.pem")).read()
             alipay = AliPay(
                 appid="9021000122686870",
                 app_notify_url=None,
