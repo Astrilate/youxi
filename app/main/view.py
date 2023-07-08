@@ -18,8 +18,8 @@ CORS(view, supports_credentials=True)
 
 @view.route('/', methods=['GET', 'OPTIONS'])
 def hello():
-    app.logger.info("this is an info")
-    app.logger.error("this is an error")
+    app.logger.info("/   this is an info")
+    app.logger.error("/   this is an error")
     return "hello"
 
 
@@ -29,7 +29,7 @@ def code():
     a = a.resize((80, 40))
     b = b.lower()
     redis_store.set("code", b, 60)
-    print("答案是", b)
+    app.logger.info("/code   " + redis_store.get("code"))
     a.save("./static/code.jpg", 'GIF')
     return jsonify(image=jpg("/static/code.jpg"))
 
@@ -43,6 +43,7 @@ def home():
         idata.update(order_id=each.id, order_title=each.title,
                      order_picture=jpg(each.picture))
         all_data.append(idata)
+    app.logger.info("/home   " + "success")
     return jsonify(code=200, message="success", data=all_data)
 
 
@@ -65,12 +66,15 @@ def neworder(x):
     game = request.form['game']
     resources = request.form['resources']
     price = request.form['price']
+    app.logger.info("/neworder   " + str(uid) + "--" + title + "--" + description + "--" + game + "--" + resources + "--" + price)
     try:
         float(price)
     except ValueError:
+        app.logger.error("/neworder   " + "价格应为数字")
         return jsonify(code=400, message="价格应为数字")
     if bool(picture) is False or bool(title) is False or bool(description) is False \
             or bool(game) is False or bool(resources) is False or bool(price) is False:
+        app.logger.error("/neworder   " + "请补充完整商品信息")
         return jsonify(code=400, message="请补充完整商品信息")
     else:
         a = orders(seller_id=uid, title=title,
@@ -83,6 +87,7 @@ def neworder(x):
         orders.query.filter(orders.id == order_id).update({"picture": '/static/picture/' + str(order_id) + '.jpg'})
         picture.save(os.path.join('./static/picture/', str(order_id) + '.jpg'))
         db.session.commit()
+        app.logger.info("/neworder   " + "提交成功，请等待审核")
         return jsonify(code=200, message="提交成功，请等待审核")
 
 
@@ -108,8 +113,10 @@ def order_updating(x):
     resources = request.form['resources']
     price = request.form['price']
     seller_id = orders.query.filter(orders.id == order_id).first().seller_id
-    app.logger.info("price----------" + price)
+    app.logger.info("/order/updating   " + str(uid) + "--" + str(order_id) + "--" + title
+                    + "--" + description + "--" + game + "--" + resources + "--" + price)
     if seller_id != uid:
+        app.logger.error("/order/updating   " + "用户无权限")
         return jsonify(code=401, message="用户无权限")
     else:
         if bool(picture):
@@ -126,10 +133,12 @@ def order_updating(x):
             try:
                 float(price)
             except ValueError:
+                app.logger.error("/order/updating   " + "价格应为数字")
                 return jsonify(code=400, message="价格应为数字")
             orders.query.filter(orders.id == order_id).update({"price": price})
         orders.query.filter(orders.id == order_id).update({"status": "待审核"})
         db.session.commit()
+        app.logger.info("/order/updating   " + "商品信息修改成功，请重新等待审核")
         return jsonify(code=200, message="商品信息修改成功，请重新等待审核")
 
 
@@ -138,6 +147,7 @@ def order_updating(x):
 def order_view():
     all_data = []
     page = int(request.args.get("page"))
+    app.logger.info("/order/view   " + str(page))
     offset = (page - 1) * 10
     search = orders.query.filter(orders.status == "已通过").offset(offset).limit(10).all()
     for each in search:
@@ -145,6 +155,7 @@ def order_view():
         each_data.update(order_id=each.id, title=each.title,
                          picture=jpg(each.picture))
         all_data.append(each_data)
+    app.logger.error("/order/view   " + "success")
     return jsonify(code=200, message="success", data=all_data)
 
 
@@ -153,9 +164,10 @@ def order_view():
 # 地址传参/order/view/verifying?page=xxx
 def order_view_verifying(x):
     access = x['access']
+    page = int(request.args.get("page"))
+    app.logger.info("/order/view/verifying   " + str(x["uid"]) + "--" + access + "--" + str(page))
     if access == "admin":
         all_data = []
-        page = int(request.args.get("page"))
         offset = (page - 1) * 10
         order_filter = {
             or_(
@@ -168,8 +180,10 @@ def order_view_verifying(x):
             each_data.update(order_id=each.id, title=each.title,
                              price=each.price, picture=jpg(each.picture))
             all_data.append(each_data)
+        app.logger.info("/order/view/verifying   " + "success")
         return jsonify(code=200, message="success", data=all_data)
     else:
+        app.logger.info("/order/view/verifying   " + "操作无权限")
         return jsonify(code=401, message="操作无权限")
 
 
@@ -181,6 +195,8 @@ def order_view_verifying(x):
 # }
 def order_verifying(x):
     access = x['access']
+    app.logger.info("/order/verifying   " + str(x["uid"]) + "--" + access + "--" +
+                    str(request.get_json().get("order_id")) + "--" + request.get_json().get("verifying"))
     if access == "admin":
         Order = orders.query.filter(orders.id == request.get_json().get("order_id"))
         seller_id = Order.first().seller_id
@@ -207,8 +223,10 @@ def order_verifying(x):
                              message=f"您标题为[{Order.first().title}]的商品未通过重审，请重新认真确认账户资源信息")
                 db.session.add(a)
         db.session.commit()
+        app.logger.info("/order/verifying   " + "success")
         return jsonify(code=200, message="success")
     else:
+        app.logger.error("/order/verifying   " + "操作无权限")
         return jsonify(code=401, message="操作无权限")
 
 
@@ -218,6 +236,7 @@ def order_searching():
     all_data = []
     keyword = request.args.get("keyword")
     page = int(request.args.get("page"))
+    app.logger.info("/order/searching   " + keyword + "--" + str(page))
     offset = (page - 1) * 10
     order_filter = {
         or_(
@@ -236,6 +255,7 @@ def order_searching():
                          picture=jpg(each.picture), price=each.price,
                          description=each.description)
         all_data.append(each_data)
+    app.logger.info("/order/searching   " + "success")
     return jsonify(code=200, message="success", data=all_data)
 
 
@@ -245,6 +265,7 @@ def order_information():
     all_data = []
     idata = {}
     order_id = request.args.get("order_id")
+    app.logger.info("/order/information   " + str(order_id))
     Order = orders.query.filter(orders.id == order_id).first()
     if bool(Order):
         idata.update(order_id=Order.id, seller_id=Order.seller_id,
@@ -252,8 +273,10 @@ def order_information():
                      order_game=Order.game, order_price=Order.price,
                      order_status=Order.status, order_picture=jpg(Order.picture))
         all_data.append(idata)
+        app.logger.info("/order/information   " + "success")
         return jsonify(code=200, message="success", data=all_data)
     else:
+        app.logger.error("/order/information   " + "参数错误")
         return jsonify(code=400, message="参数错误")
 
 
@@ -269,19 +292,23 @@ def order_bidding(x):
     order_id = request.get_json().get("order_id")
     price = request.get_json().get("price")
     message = request.get_json().get("message")
+    app.logger.info("/order/bidding   " + str(order_id) + "--" + str(price) + "--" + message)
     buyer_name = users.query.filter(users.id == uid).first().name
     title = orders.query.filter(orders.id == order_id).first().title
     seller_id = orders.query.filter(orders.id == order_id).first().seller_id
     time_now = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
     if seller_id == uid:
+        app.logger.error("/order/bidding   " + "不能给自己的商品出价哦")
         return jsonify(code=400, message="不能给自己的商品出价哦")
     else:
         if price is None:
+            app.logger.error("/order/bidding   " + "请填写出价")
             return jsonify(code=400, message="请填写出价")
         else:
             try:
                 float(price)
             except ValueError:
+                app.logger.error("/order/bidding   " + "价格应为数字")
                 return jsonify(code=400, message="价格应为数字")
             a = bids(order_id=order_id, buyer_id=uid,
                      buyer_name=buyer_name, price=price,
@@ -290,7 +317,8 @@ def order_bidding(x):
                          user_id=seller_id, time=time_now)
             db.session.add_all([a, b])
             db.session.commit()
-        return jsonify(code=200, message="出价成功")
+            app.logger.info("/order/bidding   " + "出价成功")
+            return jsonify(code=200, message="出价成功")
 
 
 @view.route('/bid/searching', methods=['GET', 'OPTIONS'])
@@ -299,6 +327,7 @@ def bid_searching():
     all_data = []
     order_id = int(request.args.get("order_id"))
     page = int(request.args.get("page"))
+    app.logger.info("/bid/searching   " + str(order_id) + "--" + str(page))
     offset = (page - 1) * 10
     search = bids.query.filter(bids.order_id == order_id).offset(offset).limit(10).all()
     for each in search:
@@ -306,6 +335,7 @@ def bid_searching():
         each_data.update(bid_id=each.id, buyer_name=each.buyer_name, price=each.price,
                          message=each.message, time=each.time)
         all_data.append(each_data)
+    app.logger.info("/bid/searching   " + "success")
     return jsonify(code=200, message="success", data=all_data)
 
 
@@ -317,6 +347,7 @@ def bid_searching():
 def order_paying(x):
     uid = x["uid"]
     order_id = request.get_json().get("order_id")
+    app.logger.info("/order/paying   " + str(uid) + "--" + str(order_id))
     Order = orders.query.filter(orders.id == order_id)
     price = Order.first().price
     seller_id = Order.first().seller_id
@@ -333,10 +364,13 @@ def order_paying(x):
                          message=f"您挂出的商品[{order_title}]已受到付款，支付金现暂存平台，请与买家协商验货")
             db.session.add_all([a, b])
             db.session.commit()
+            app.logger.info("/order/paying   " + "支付成功")
             return jsonify(code=200, message="支付成功")
         else:
+            app.logger.error("/order/paying   " + "账户余额不足")
             return jsonify(code=400, message="账户余额不足")
     else:
+        app.logger.error("/order/paying   " + "不能购买自己的商品哦")
         return jsonify(code=400, message="不能购买自己的商品哦")
 
 
@@ -350,6 +384,7 @@ def order_confirming(x):
     uid = x["uid"]
     order_id = request.get_json().get("order_id")
     confirm = request.get_json().get("confirming")
+    app.logger.info("/order/confirming   " + str(uid) + "--" + str(order_id) + "--" + confirm)
     Order = orders.query.filter(orders.id == order_id)
     seller_id = Order.first().seller_id
     time_now = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
@@ -368,8 +403,10 @@ def order_confirming(x):
         idata.update(order_id=Order.first().id, title=Order.first().title,
                      status=Order.first().status, price=Order.first().price,
                      picture=jpg(Order.first().picture))
+        app.logger.info("/order/confirming   " + "success")
         return jsonify(code=200, message="success", data=idata)
     else:
+        app.logger.error("/order/confirming   " + "用户无权限")
         return jsonify(code=401, message="用户无权限")
 
 
@@ -383,6 +420,7 @@ def order_delivering(x):
     uid = x["uid"]
     order_id = request.get_json().get("order_id")
     delivering = request.get_json().get("delivering")
+    app.logger.info("/order/delivering   " + str(uid) + "--" + str(order_id) + "--" + delivering)
     Order = orders.query.filter(orders.id == order_id)
     order_buyer_id = Order.first().buyer_id
     order_title = Order.first().title
@@ -414,8 +452,10 @@ def order_delivering(x):
                      status=Order.first().status, price=Order.first().price,
                      picture=jpg(Order.first().picture))
         db.session.commit()
+        app.logger.info("/order/delivering   " + "success")
         return jsonify(code=200, message="success", data=idata)
     else:
+        app.logger.error("/order/delivering   " + "用户无权限")
         return jsonify(code=401, message="用户无权限")
 
 
@@ -427,6 +467,7 @@ def order_delivering(x):
 def order_canceling(x):
     uid = x["uid"]
     order_id = request.get_json().get("order_id")
+    app.logger.info("/order/canceling   " + str(uid) + "--" + str(order_id))
     Order = orders.query.filter(orders.id == order_id)
     if uid == Order.first().seller_id or uid == Order.first().buyer_id:
         order_buyer_id = Order.first().buyer_id
@@ -450,8 +491,10 @@ def order_canceling(x):
         Order.update({"buyer_id": None, "money": "否", "status": "已通过"})
         db.session.add_all([a, b])
         db.session.commit()
+        app.logger.info("/order/canceling   " + "success")
         return jsonify(code=200, message="success")
     else:
+        app.logger.error("/order/canceling   " + "用户无权限")
         return jsonify(code=401, message="用户无权限")
 
 
@@ -461,6 +504,7 @@ def order_canceling(x):
 def order_deleting(x):
     uid = x["uid"]
     order_id = int(request.args.get("order_id"))
+    app.logger.info("/order/deleting   " + str(uid) + "--" + str(order_id))
     Order = orders.query.filter(orders.id == order_id)
     order_seller_id = Order.first().seller_id
     if uid == order_seller_id:
@@ -484,8 +528,10 @@ def order_deleting(x):
         collections.query.filter(collections.order_id == order_id).delete()
         Order.delete()
         db.session.commit()
+        app.logger.info("/order/deleting   " + "success")
         return jsonify(code=200, message="success")
     else:
+        app.logger.info("/order/deleting   " + "用户无权限")
         return jsonify(code=401, message="用户无权限")
 
 
@@ -496,12 +542,14 @@ def message(x):
     uid = x["uid"]
     all_data = []
     page = int(request.args.get("page"))
+    app.logger.info("/message   " + str(uid) + "--" + str(page))
     offset = (page - 1) * 10
     search = messages.query.filter(messages.user_id == uid).offset(offset).limit(10).all()
     for each in search:
         each_data = {}
         each_data.update(message=each.message, time=each.time)
         all_data.append(each_data)
+    app.logger.info("/message   " + "success")
     return jsonify(code=200, message="success", data=all_data)
 
 
@@ -513,6 +561,7 @@ def message(x):
 def order_collecting(x):
     uid = x["uid"]
     order_id = request.get_json().get("order_id")
+    app.logger.info("/order/collecting   " + str(uid) + "--" + str(order_id))
     Order = orders.query.filter(orders.id == order_id).first()
     order_filter = {
         and_(
@@ -522,12 +571,14 @@ def order_collecting(x):
     }
     collection = collections.query.filter(*order_filter).first()
     if collection is not None:
+        app.logger.error("/order/collecting   " + "您已收藏过此商品了")
         return jsonify(code=401, message="您已收藏过此商品了")
     else:
         a = collections(order_id=order_id, order_title=Order.title,
                         order_picture=Order.picture, user_id=uid)
         db.session.add(a)
         db.session.commit()
+        app.logger.info("/order/collecting   " + "success")
         return jsonify(code=200, message="success")
 
 
@@ -538,6 +589,7 @@ def order_view_collection(x):
     uid = x["uid"]
     all_data = []
     page = int(request.args.get("page"))
+    app.logger.info("/order/view/collection   " + str(uid) + "--" + str(page))
     offset = (page - 1) * 10
     search = collections.query.filter(collections.user_id == uid).offset(offset).limit(10).all()
     for each in search:
@@ -545,6 +597,7 @@ def order_view_collection(x):
         each_data.update(order_id=each.order_id, title=each.order_title,
                          picture=jpg(each.order_picture))
         all_data.append(each_data)
+    app.logger.info("/order/view/collection   " + "success")
     return jsonify(code=200, message="success", data=all_data)
 
 
@@ -556,6 +609,7 @@ def order_view_mine(x):
     all_data = []
     Type = request.args.get("type")
     page = int(request.args.get("page"))
+    app.logger.info("/order/view/mine   " + str(uid) + "--" + Type + "--" + str(page))
     offset = (page - 1) * 10
     if Type == "selling":
         search = orders.query.filter(orders.seller_id == uid).offset(offset).limit(10).all()
@@ -567,4 +621,5 @@ def order_view_mine(x):
                          status=each.status, price=each.price,
                          picture=jpg(each.picture))
         all_data.append(each_data)
+    app.logger.info("/order/view/mine   " + "success")
     return jsonify(code=200, message="success", data=all_data)
